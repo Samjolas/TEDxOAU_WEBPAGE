@@ -1,7 +1,7 @@
 /********* This is Team specific styles ***********/
 @use "../abstracts" as a;
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+
 .section {
   padding: 4.5rem 0 1rem;
 }
@@ -13,204 +13,224 @@
   margin-bottom: a.$mb-1;
 }
 
-/*========== LAYOUT ==========*/
-.bd-container {
-  max-width: 1100px;
-  width: calc(100% - 2rem);
-  margin: 0 a.$mb-2;
+
+
+
+.team {
+  &-bio {
+    margin-top: 1.5rem;
+  
+    & p {
+      font-size: 1.6rem;
+      text-align: justify;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: row;
+    &--text {
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+      margin-left: 1rem;
+    }
+  }
+
+  &__head2 {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4rem 0;
+  }
+
+  &__figure {
+    box-sizing: border-box;
+    display: grid;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 100%;
+    border-radius: 0.75rem;
+  }  
+
+  &__body {
+    width: 30%;
+    
+    &--img {
+      position: absolute;
+      bottom: 0;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.5s;
+      border-radius: 0.8rem;
+      filter: grayscale(0);
+    }
+  
+    &--item {
+      background-color: a.$bg-color;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+    }
+  
+    &--details {
+      padding: 0 4rem;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  &__name {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 4rem;
+    margin: 0.75rem 0 0.25rem;
+  }
+  
+  &__role {
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: a.$heading-color;
+  }
+
+  &__preview {
+    display: none;
+    padding: 2rem;
+    background: #000;
+    color: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 60rem;
+    border-radius: 10px;
+    animation-duration: 0.4s;
+    animation-name: animate;
+  
+    &-btn-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+      margin-bottom: a.$mb-4;
+    }
+    &-btn-close i {
+      font-size: 2rem;
+    }
+  
+    @keyframes animate {
+      0% {
+        transform: scale(1, 1);
+      }
+  
+      50% {
+        transform: scale(1.1, 1.1);
+      }
+  
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+
+    &-body {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-height: 100vh;
+      width: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      background: rgba(230, 43, 30, 0.35);
+      backdrop-filter: blur(3px);
+      z-index: var(--z-fixed);
+    }
+
+    &.active {
+      display: inline-block;
+    }
+  }
+
+  &__summary-header {
+    display: flex;
+    align-items: center;
+  
+    &-photo img {
+      border-radius: 35px;
+      /* filter: grayscale(100%); */
+      width: 70px;
+      height: 70px;
+      cursor: pointer;
+    }
+    &-name {
+      margin-left: 1.5rem;
+    }
+  
+    &-name p {
+      font-size: 1.5rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+    }
+  
+    &-name h3 {
+      font-size: 2rem;
+      line-height: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
-.grid {
-  display: grid;
-  gap: 1.5rem;
-}
+
+
+
+
 
 /*======== HEADER ========*/
 .header {
   padding: 2rem 0;
 }
-.header--title {
-  font-size: 3rem;
-  color: a.$heading-color;
-}
+
 
 /*=========== MAIN ===========*/
 // TEAM
-.team__summary {
-  font-size: 1.7rem;
-  letter-spacing: 1px;
-}
 
-.team__group {
-  // gap: 2.5rem;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  margin-top: 2rem;
-}
 
-.team__item {
-  background-color: a.$bg-color;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-}
-
-.figure {
-  box-sizing: border-box;
-  display: grid;
-  width: initial;
-  height: initial;
-  background: none;
-  opacity: 1;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  padding-top: 100%;
-  border-radius: 0.75rem;
-}
-
-.team__img,
-.team__img-tobi {
-  position: absolute;
-  bottom: 0;
-  min-width: 80%;
-  max-width: 100%;
-  min-height: 100%;
-  max-height: 100%;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.5s;
-  border-radius: 0.8rem;
-  filter: grayscale(0);
-  justify-self: center;
-}
-
-.team__img-tobi {
-  width: 80%;
-}
-.team__item:hover .team__img {
+.team__body--item:hover .team__body--img {
   filter: grayscale(100%);
 }
 
-.team__details {
-  padding: 0 4rem;
-  color: #fff;
-  text-align: center;
-}
 
-.team__name {
-  font-weight: 800;
-  font-size: 2rem;
-  line-height: 4rem;
-  margin: 0.75rem 0 0.25rem;
-}
 
-.team__role {
-  font-size: a.$h1-font-size;
-  line-height: 1.25rem;
-  font-weight: 500;
-  color: a.$heading-color;
-}
+
 
 /* ==========TEAM PREVIEW STYLES ======== */
-.team__preview-body {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-height: 100vh;
-  width: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  z-index: var(--z-fixed);
-}
 
-.team__preview {
-  display: none;
-  padding: 2rem;
-  background: #fff;
-  color: a.$bg-color;
-  position: relative;
-  margin: 2rem;
-  width: 31rem;
-  border-radius: 10px;
-  animation-duration: 0.4s;
-  animation-name: animate;
 
-  &-btn-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-    margin-bottom: a.$mb-4;
-  }
-  &-btn-close i {
-    font-size: 2rem;
-  }
 
-  @keyframes animate {
-    0% {
-      transform: scale(1, 1);
-    }
 
-    50% {
-      transform: scale(1.1, 1.1);
-    }
 
-    100% {
-      transform: scale(1, 1);
-    }
-  }
-}
 
-.team__preview.active {
-  display: inline-block;
-}
 
-.team__summary-header {
-  display: flex;
-  align-items: center;
 
-  &-photo img {
-    border-radius: 35px;
-    /* filter: grayscale(100%); */
-    width: 70px;
-    height: 70px;
-    cursor: pointer;
-  }
-  &-name {
-    margin-left: 1.5rem;
-  }
 
-  &-name p {
-    font-size: 1.5rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-  }
-
-  &-name h3 {
-    font-size: 2rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-}
-
-.team-bio {
-  margin-top: 1.5rem;
-
-  & p {
-    font-size: 1.6rem;
-    text-align: justify;
-    font-weight: 300;
-    line-height: 1.4;
-  }
-}
 
 /*=============== MEDIA QUERIES ===============*/
 /* For medium devices */
+/* We will need to redo this  */
 @media screen and (min-width: 576px) {
   .team__group {
     gap: 1.5rem;
@@ -270,10 +290,10 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .bd-container {
+  /*.bd-container {
     margin-left: auto;
     margin-right: auto;
-  }
+  }*/
   .speaker__group {
     gap: 1.5rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
