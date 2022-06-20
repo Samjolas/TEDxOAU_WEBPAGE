@@ -3,7 +3,7 @@
 let teamPreview = document.querySelector('.team__preview-body');
 let teamPreviewBox = document.querySelectorAll('.team__preview');
 
-document.querySelectorAll('.team__group .team__item').forEach(team__item =>{
+document.querySelectorAll('.team__group .team__body--item').forEach(team__item =>{
     team__item.addEventListener('click', function(){
         teamPreview.style.display = 'flex'
         let name = team__item.getAttribute('data-name');
