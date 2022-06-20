@@ -1,4 +1,17 @@
 /********* This is for Typography ***********/
+@use '../abstracts' as a;
+
+.heading-main {
+  color: a.$text-color;
+  font-size: a.$h1-font-size;
+
+  &--red {
+  color: a.$heading-color;
+  font-size: a.$h1-font-size;
+  }
+}
+
+
 
 h1,h2,h3,p,ul {
   margin: 0;
@@ -13,3 +26,6 @@ ul {
 a,a:visited,a:active{
   text-decoration: none;
 }
+
+
+
