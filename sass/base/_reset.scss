@@ -1,5 +1,6 @@
 /********* This is for Reset ***********/
 @use '../abstracts' as a;
+
 *,
 ::before,
 ::after {
@@ -7,18 +8,20 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;   I commented this becauce of the notification vs studio gave me*/  
   font-size: 62.5%;
+  
 }
 
 body {
     margin: 0;
     padding: 0;
     position: relative;
-    line-height: 1.5;
+    line-height: 1.2;
     font-family: a.$body-font;
     background-color: a.$bg-color;
     color: a.$text-color;
+    overflow-x: hidden;
 }
 
 img {
