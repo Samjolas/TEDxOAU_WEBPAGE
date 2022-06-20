@@ -1,14 +1,21 @@
 .bg-pattern {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 1000rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  
   &__span {
     margin-top: -3rem;
     border: 0.3px dashed rgba(255, 255, 255, 0.05);
-    margin-right: 2rem;
+    margin-right: 3rem;
     &:nth-child(even) {
-      margin-right: 4rem;
+      margin-right: 0;
+      &:not(:last-of-type) {
+        margin-right: 7rem;
+      }
     }
   }
 }
