@@ -8,7 +8,7 @@
   flex-direction: row;
   &__span {
     margin-top: -3rem;
-    border: 0.3px dashed rgba(255, 255, 255, 0.05);
+    border: 0.1px dashed rgba(255, 255, 255, 0.05);
     margin-right: 3rem;
     &:nth-child(even) {
       margin-right: 0;
@@ -26,7 +26,6 @@
   right: 0;
   font-weight: 700;
   line-height: .8;
-  z-index: -10;
   text-align: end;
   color: rgba(255, 255, 255, 0.2);
 }
