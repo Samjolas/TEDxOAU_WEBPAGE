@@ -217,14 +217,6 @@
 /* ==========TEAM PREVIEW STYLES ======== */
 
 
-
-
-
-
-
-
-
-
 /*=============== MEDIA QUERIES ===============*/
 /* For medium devices */
 /* We will need to redo this  */
@@ -241,41 +233,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .content p {
-    font-size: 1.3rem;
-  }
-
-  .speaker__preview {
-    width: 30rem;
-  }
-
-  .btn-close i {
-    font-size: 1.8rem;
-  }
-
-  .speaker-photo img {
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
-  }
-  .speaker__name {
-    font-size: 1.85rem;
-  }
-  .speaker__role {
-    font-size: 1.3rem;
-  }
-
-  .speaker-name h3 {
-    font-size: 1.8rem;
-  }
-
-  .speaker-name p {
-    font-size: 1.4rem;
-  }
-
-  .speaker-bio p {
-    font-size: 1.45rem;
-  }
 }
 
 /* For large devices */
@@ -291,8 +248,4 @@
     margin-left: auto;
     margin-right: auto;
   }*/
-  .speaker__group {
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
