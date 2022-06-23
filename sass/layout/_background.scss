@@ -1,31 +1,30 @@
+@use '../abstracts' as a;
+
 .bg-pattern {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include a.div-center;
   height: 800rem;
   display: flex;
   flex-direction: row;
   &__span {
-    margin-top: -3rem;
-    border: 0.1px dashed rgba(255, 255, 255, 0.05);
-    margin-right: 3rem;
+    margin-top: -(a.$m-3);
+    border: 0.1px dashed rgba(255, 255, 255, 0.05);// t be editted
+    margin-right: a.$m-3;
     &:nth-child(even) {
       margin-right: 0;
       &:not(:last-of-type) {
-        margin-right: 7rem;
+        margin-right: a.$m-7;
       }
     }
   }
 }
 
 .bg-text {
-  font-size: 25rem;
+  font-size: a.$big-font;
   position: absolute;
   bottom: 0;
   right: 0;
-  font-weight: 700;
+  font-weight: a.$fw-7;
   line-height: .8;
   text-align: end;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2);// to be editted
 }

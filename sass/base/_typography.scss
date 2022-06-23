@@ -3,19 +3,17 @@
 
 .heading-main {
   color: a.$text-color;
-  font-size: a.$h1-font-size;
+  font-size: a.$main-font;
 
   &--red {
-  color: a.$heading-color;
-  font-size: a.$h1-font-size;
+    color: a.$tedx-red;
   }
 }
 
 
 
 h1,h2,h3,p,ul {
-  margin: 0;
-  padding: 0;
+  @include a.mp;
 }
 
 ul {
@@ -25,38 +23,43 @@ ul {
 
 a,a:visited,a:active{
   text-decoration: none;
+  color: a.$text-color;
 }
 
 
 .text__big {
-  font-size: 30rem;
-  font-weight: a.$font-bold;
-  color: rgba(255, 255, 255, 0.3);
+  font-size: a.$big-font;
+  font-weight: a.$fw-7;
+  color: rgba(255, 255, 255, 0.3);//to be editted
 }
 
-.text__main {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 45rem;
+
+.hero {
+  &__text {
+    position: absolute;
+    width: 45rem;
+    &--main { 
+      top: 50%;
+      left: 0;
+    }
+    &--sub {
+      top: 22%;
+      right: 10%;
+    }
+    &--font {
+      text-transform: capitalize;
+      bottom: 6%;
+      right: 10%;
+      color: a.$tedx-red;
+      font-size: a.$des-font;
+    }
+  }
 }
 
-.text__sub {
-  position: absolute;
-  top: 22%;
-  right: 10%;
-  width: 45rem;
-}
 
-.text__red {
-  text-transform: capitalize;
-  position: absolute;
-  bottom: 6%;
-  right: 10%;
-  width: 45rem;
-  color: a.$heading-color;
-  font-size: 4rem;
-}
+
+
+
 
 
 

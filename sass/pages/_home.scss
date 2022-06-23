@@ -5,10 +5,10 @@
   top: 0;
   left: 0;
   margin: 0 6rem;
-}
-
-.hero-text {
-  height: 100vh;
-  width: 95vw;
-  
+  &__div {
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 95vw;
+  }
 }
