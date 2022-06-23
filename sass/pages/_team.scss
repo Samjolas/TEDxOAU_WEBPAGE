@@ -2,59 +2,42 @@
 @use "../abstracts" as a;
 
 
-.section {
-  padding: 4.5rem 0 1rem;
-}
-
-.section__title,
-.section__title-center {
-  font-size: a.$biggest-font-size;
-  color: a.$text-color;
-  margin-bottom: a.$mb-1;
-}
-
-
-
-
 .team {
-  &-bio {
-    margin-top: 1.5rem;
-  
-    & p {
-      font-size: 1.6rem;
-      text-align: justify;
-      font-weight: 300;
-      line-height: 1.4;
-    }
-  }
-
   &__head {
-    display: flex;
-    flex-direction: row;
-    &--text {
-      display: flex;
-      font-size: 1.7rem;
-      letter-spacing: 1px;
-      justify-content: center;
-      align-items: center;
-      margin: 3rem;
-      font-weight: 300;
+    &--row {
+      @include a.flex-row;
     }
+    &--column {
+      @include a.flex-column;
+    }  
   }
-
-  &__head2 {
-    display: flex;
-    flex-direction: column;
+  &__text {
+    font-size: a.$default-font;
+    letter-spacing: 1px;
+    @include a.main-center;
+    margin: a.$m-3;
+    font-weight: a.$fw-3;
   }
-
   &__group {
-    display: flex;
-    flex-direction: row;
+    @include a.flex-row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 4rem 0;
+    
   }
+  &__body {
+    width: 32%;
+  }
+  &__item {
+    position: relative;
+    background-color: a.$bg-color;
+    overflow: hidden;
+    cursor: pointer;
 
+    &:hover .team__img {
+      filter: grayscale(0%);
+    }
+  }
   &__figure {
     box-sizing: border-box;
     display: grid;
@@ -63,133 +46,35 @@
     background: none;
     opacity: 1;
     border: 0;
-    margin: 0;
-    padding: 0;
+    @include a.mp;
     padding-top: 100%;
-  }  
+  } 
+  &__img {
+    position: absolute;
+    bottom: 0;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    filter: grayscale(100%);
 
-  &__body {
-    width: 32%;
     
-    &--img {
-      position: absolute;
-      bottom: 0;
-      transition-property: all;
-      transition-timing-function: ease-in-out;
-      transition-duration: 0.5s;
-      filter: grayscale(100%);
-    }
-  
-    &--item {
-      background-color: a.$bg-color;
-      overflow: hidden;
-      cursor: pointer;
-      position: relative;
-    }
-  
-    &--details {
-      color: #fff;
-    }
   }
-
+  &__details {
+    color: a.$text-color;
+  }
   &__name {
-    font-weight: 700;
-    font-size: 3rem;
+    font-weight: a.$fw-7;
+    font-size: a.$name-font;
     line-height: 4rem;
   }
-  
   &__role {
-    font-size: 1.6rem;
+    font-size: a.$default-font;
     line-height: 1;
-    font-weight: 700;
-    color: a.$heading-color;
-  }
-
-  &__preview {
-    display: none;
-    padding: 2rem;
-    background: #000;
-    color: #fff;
-    position: relative;
-    margin: 2rem;
-    width: 60rem;
-    border-radius: 10px;
-    animation-duration: 0.4s;
-    animation-name: animate;
-  
-    &-btn-close {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      cursor: pointer;
-      margin-bottom: a.$mb-4;
-    }
-    &-btn-close i {
-      font-size: 2rem;
-    }
-  
-    @keyframes animate {
-      0% {
-        transform: scale(1, 1);
-      }
-  
-      50% {
-        transform: scale(1.1, 1.1);
-      }
-  
-      100% {
-        transform: scale(1, 1);
-      }
-    }
-
-    &-body {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-height: 100%;
-      width: 100%;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      background: rgba(230, 43, 30, 0.35);
-      backdrop-filter: blur(3px);
-      z-index: var(--z-fixed);
-    }
-
-    &.active {
-      display: inline-block;
-    }
-  }
-
-  &__summary-header {
-    display: flex;
-    align-items: center;
-  
-    &-photo img {
-      border-radius: 35px;
-      /* filter: grayscale(100%); */
-      width: 70px;
-      height: 70px;
-      cursor: pointer;
-    }
-    &-name {
-      margin-left: 1.5rem;
-    }
-  
-    &-name p {
-      font-size: 1.5rem;
-      line-height: 1.25rem;
-      font-weight: 500;
-    }
-  
-    &-name h3 {
-      font-size: 2rem;
-      line-height: 1.75rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
+    font-weight: a.$fw-7;
+    color: a.$tedx-red;
   }
 }
+
 
 
 
@@ -206,9 +91,7 @@
 // TEAM
 
 
-.team__body--item:hover .team__body--img {
-  filter: grayscale(0%);
-}
+
 
 
 
@@ -248,4 +131,18 @@
     margin-left: auto;
     margin-right: auto;
   }*/
+}
+
+
+
+@media screen and (min-width: 768px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
 }

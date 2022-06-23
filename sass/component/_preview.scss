@@ -1,0 +1,75 @@
+@use "../abstracts" as a;
+
+.preview {
+  position: fixed;
+  @include a.div-initial;
+  min-height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(230, 43, 30, 0.35); //adjust this
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  &__body {
+    display: none;
+    padding: a.$p-2;
+    background: a.$bg-color;
+    color: a.$text-color;
+    position: relative;
+    margin: a.$m-2;
+    width: 60rem;
+    animation-duration: 0.4s;
+    animation-name: popup;
+    &.active {
+      display: inline-block;
+    }
+  }
+  &__btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    margin-bottom: a.$m-2;
+  }
+  &__header {
+    @include a.flex-row;
+  }
+  &__photo {
+    border-radius: 35px;
+    /* filter: grayscale(100%); */
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+  }
+  &__person {
+    margin-left: a.$m-1;
+    margin-top: a.$m-2;
+  }
+  &__bio {
+    margin-top: a.$m-1;
+    font-size: a.$default-font;
+    text-align: justify;
+    font-weight: a.$fw-3;
+    line-height: 1.4;
+  }
+  &__name {
+    font-size: a.$name-font;
+    line-height: 1.75rem;
+    font-weight: a.$fw-6;
+    margin-bottom: 1rem;
+  }
+  &__role {
+    
+    font-size: a.$small-font;
+    line-height: 1.25rem;
+    font-weight: a.$fw-5;
+  }
+  &-btn-close i {
+    font-size: 2rem;
+  }
+}
+
+
+
+
