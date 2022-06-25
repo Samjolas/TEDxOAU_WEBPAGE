@@ -1,1 +1,52 @@
 /********* This is for Sidebar ***********/
+
+@use "../abstracts" as a;
+.update {
+  @include a.flex-column;
+
+  &__box {
+    background-color: a.$tedx-red;
+    height: 30rem;
+    width: 50%;
+
+    &--white {
+      background-color: a.$text-color;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 10rem;
+    line-height: 30rem;
+    @include a.main-center;
+    &--red {
+      color: a.$tedx-red;
+    }
+  }
+}
+
+
+
+
+/*
+
+&--stack{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  // gap: 3rem;
+  & .stack{
+      padding: 3rem;
+      background-color: #e62b1e;
+      font-size: 3rem;
+  }
+  & .stack-2{
+      background-color: #fff;
+      color: #e62b1e
+      ;
+  }
+}
+
+*/

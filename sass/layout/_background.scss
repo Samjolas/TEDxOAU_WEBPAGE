@@ -2,7 +2,7 @@
 
 .bg-pattern {
   @include a.div-center;
-  height: 800rem;
+  height: 850rem;
   display: flex;
   flex-direction: row;
   &__span {
@@ -20,11 +20,11 @@
 
 .bg-text {
   font-size: a.$big-font;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   font-weight: a.$fw-7;
-  line-height: .8;
+  line-height: .73;
   text-align: end;
-  color: rgba(255, 255, 255, 0.2);// to be editted
+  color: rgba(255, 255, 255, 0.04);// to be editted
 }

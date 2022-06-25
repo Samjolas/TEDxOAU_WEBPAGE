@@ -35,6 +35,7 @@ a,a:visited,a:active{
 
 
 .hero {
+  position: relative;
   &__text {
     position: absolute;
     width: 45rem;

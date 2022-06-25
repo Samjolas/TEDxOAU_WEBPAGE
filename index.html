@@ -7,7 +7,7 @@
   <!-- ================BOX ICONS===================== -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="dist/main.css">
-  <title>TEDxOAU</title>
+  <title>Home - TEDxOAU</title>
   <link rel="icon" type="image/x-icon" href="resource/tedx_favicon.png">
 </head>
 <body>
@@ -45,13 +45,13 @@
   <!--  End Background Pattern -->
 
   <main class="hero"> 
+    <!-- Note: when you add a new nav, please chnage the left property into the nav css to suit it-->
     <nav class="nav">
       <ul>
-        <li class="nav__list"><a href="#">events</a></li>
-        <li class="nav__list"><a href="#">partners</a></li>
-        <li class="nav__list"><a href="#">blog</a></li>
+        <li class="nav__list"><a href="#">Sponsor</a></li>
+        <li class="nav__list"><a href="https://tedxoau.com/blog/">blog</a></li>
         <li class="nav__list"><a href="team.html">the team</a></li>
-        <li class="nav__list"><a href="#">about</a></li>
+        <li class="nav__list"><a href="about.html">about</a></li>
       </ul>
     </nav>
     <header class="hero__div">
@@ -59,15 +59,35 @@
         <span class="heading-main">Welcome <br> to</span>
         <span class="heading-main heading-main--red" id="word">TEDxOAU</span>  
       </h1>
-      <div class="bg-text"> TEDx <br> OAU</div>
+      <div class="bg-text">TEDx<br>OAU</div>
       <h2 class="hero__text hero__text--main">In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. in summary we’re TEDX by the greatest, for the greatest</h2>
       <h2 class="hero__text hero__text--sub"> <strong>We are...</strong> <br> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32</h2>
       <h2 class="hero__text hero__text--font">this site and all it’s components in pay homage to helvetica and swiss typography design</h2>
       <embed src="resource/scroll-animation.gif" class="text__scroll">
     </header>
 
-    <section class="event">
-    </section>
+    <section class="blog" id="blog">
+      <img src="resource/tedx_oau.png" alt="TEDxOAU" class="blog__head">
+      <article class="blog__wrapper">
+        <h2 class="blog__header">Global topics <br> Local discussions</h2>
+        <div class="blog__body">
+          <div class="blog__des">
+            <p class="blog__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, ducimus iusto totam distinctio ab impedit tempora? Exercitationem debitis vel nobis mollitia quisquam delectus nulla, inventore doloremque aspernatur consequatur! Non facilis maxime, sit officiis sint nostrum est saepe sunt! Error voluptas alias adipisci quibusdam, autem quidem inventore. Quas, similique quibusdam. Ipsam.</p>
+            <a href="#" class="blog__link"><span>See More</span><i class="bx bx-right-arrow-alt"></i></a>              
+          </div>
+          <div class="blog__img">
+            <figure><img src="./resource/sample_blog.png" alt="blog_post" class="blog__img"></figure>
+            <div class="blog__next" id="next"> <p>Next</p></div>       
+          </div>
+        </div>
+      </article>
+  </section>
+
+  <section class="update">
+    <a href="#" class="update__box"> <span class="update__text">Community</span> <i class="bx bx-right-arrow-alt"></i></a>
+    <a href="#" class="update__box update__box--white"> <span class="update__text update__text--red">Sponsor</span> </a>
+    <a href="#" class="update__box"> <span class="update__text">Volunteer</span> </a>
+  </section>
     
     <footer class="footer">
       <div class="footer__container">
@@ -104,27 +124,27 @@
           <div class="footer__container--lower_links">
               <div class="footer__list">
                   <ul>
-                      <li class="footer__list-item"><a href="#">About</a></li>
-                      <li class="footer__list-item"><a href="#">Meet Our Team</a></li>
-                      <li class="footer__list-item"><a href="#">Speaker</a></li>
-                      <li class="footer__list-item"><a href="#">Previous Sessions</a></li>
+                      <li class="footer__list-item"><a href="about.html">About</a></li>
+                      <li class="footer__list-item"><a href="team.html">Meet Our Team</a></li>
+                      <li class="footer__list-item"><a href="#">Sponsor</a></li>
+                      <li class="footer__list-item"><a href="#">Blog</a></li>
                       <li class="footer__list-item"><a href="#">Contact Us</a></li>
                   </ul>
-                  <ul>
+                  <!--<ul>
                       <li class="footer__list-item"><a href="#">FAQs</a></li>
                       <li class="footer__list-item"><a href="#">Programme Schedule</a></li>
                       <li class="footer__list-item"><a href="#">Speaker</a></li>
                       <li class="footer__list-item"><a href="#">Previous Sessions</a></li>
                       <li class="footer__list-item"><a href="#">Contact Us</a></li>
-                  </ul>
+                  </ul>-->
               </div>
               <div class="footer__social">
-              <a href="#"><i class="bx bxl-facebook"></i></a>
-              <a href="#"><i class="bx bxl-twitter"></i></a> 
-              <a href="#"><i class="bx bxl-instagram"></i></a>
-              <a href="#"><i class="bx bxl-linkedin"></i></a>
-              <a href="#"><i class="bx bxl-youtube"></i></a>
-              <a href="#"><i class="bx bxl-vimeo"></i></a>
+              <a href="https://web.facebook.com/tedxoauofficial/" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a href="https://twitter.com/tedxoauofficial?t=2DYvKyfYjTuPeP8kJAMtdw&s=09"><i class="bx bxl-twitter" target="_blank"></i></a> 
+              <a href="https://www.instagram.com/accounts/login/?next=/tedxoauofficial/"><i class="bx bxl-instagram" target="_blank"></i></a>
+              <a href="https://www.linkedin.com/company/tedxoauofficial/"><i class="bx bxl-linkedin" target="_blank"></i></a>
+              <!--<a href="#"><i class="bx bxl-youtube"></i></a>
+              <a href="#"><i class="bx bxl-vimeo"></i></a>-->
               </div>  
           </div>
       </div>
