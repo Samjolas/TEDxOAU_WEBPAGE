@@ -77,12 +77,20 @@ teamPreviewBox.forEach(closeModal => {
 
 // MOVE TO NEXT //
 
-let Blog = document.querySelector('.blog__wrapper');
-let Next = document.getElementById ('next');
+// let Blog = document.querySelector('.blog__wrapper');
+// let Next = document.getElementById ('next');
 
-Next.addEventListener('click', function(){
-  Blog.classList.add('.de-active')
+// Next.addEventListener('click', function(){
+//   Blog.classList.add('.de-active')
   
-})
-)
+// })
+// )
 
+
+const moveNext = document.querySelector('.blog__next');
+const blogMove = document.querySelector('.blog__img')
+
+
+moveNext.addEventListener('click', function(){
+  blogMove.src = ''
+})
