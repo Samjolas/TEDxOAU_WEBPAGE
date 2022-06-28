@@ -77,6 +77,7 @@ teamPreviewBox.forEach(closeModal => {
 
 // MOVE TO NEXT //
 
+<<<<<<< HEAD
 // let Blog = document.querySelector('.blog__wrapper');
 // let Next = document.getElementById ('next');
 
@@ -85,6 +86,10 @@ teamPreviewBox.forEach(closeModal => {
   
 // })
 // )
+=======
+
+
+>>>>>>> 3e089a5dcbc35b4220647ff78e042051aedf2a50
 
 
 const moveNext = document.querySelector('.blog__next');
