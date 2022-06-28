@@ -75,8 +75,24 @@ teamPreviewBox.forEach(closeModal => {
     }
 });
 
+
+
 // MOVE TO NEXT //
 
+let Next = document.querySelector('#next');
+let Blog = document.querySelectorAll('.blog__wrapper')
+console.log (Blog)
 
+Next.addEventListener('click', function() {
+  removeBlog()
+  currentActive = Math.floor(Math.random()*4)
+  num = Blog[currentActive]
+  num.classList.remove('de-active')
+})
 
+function removeBlog() {
+  Blog.forEach(x => {
+    x.classList.add('de-active')
+  })
+}
 
