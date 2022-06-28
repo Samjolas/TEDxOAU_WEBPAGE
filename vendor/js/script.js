@@ -1,6 +1,6 @@
 
 // TEDxOAU TEXT ANIMATION //
-/*
+
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
   var dataText = ["TEDxOAU"];
@@ -75,7 +75,7 @@ teamPreviewBox.forEach(closeModal => {
     }
 });
 
-*/
+
 
 // MOVE TO NEXT //
 
@@ -83,12 +83,9 @@ let Next = document.querySelector('#next');
 let Blog = document.querySelectorAll('.blog__wrapper')
 console.log (Blog)
 
-Next.addEventListener ('click', function() {
+Next.addEventListener('click', function() {
   removeBlog()
   currentActive = Math.floor(Math.random()*4)
-  console.log(currentActive)
-  console.log(Blog)
-  console.log(Next)
   num = Blog[currentActive]
   num.classList.remove('de-active')
 })
