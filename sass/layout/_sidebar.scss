@@ -3,19 +3,16 @@
 @use "../abstracts" as a;
 .update {
   @include a.flex-column;
-
   &__box {
     background-color: a.$tedx-red;
     height: 30rem;
     width: 50%;
     border: 1px solid a.$tedx-red;
-
     &--white {
       background-color: a.$text-color;
       border: 1px solid a.$text-color;
     }
   }
-
   &__text {
     font-weight: 700;
     font-size: 10rem;
@@ -24,31 +21,9 @@
     &--red {
       color: a.$tedx-red;
     }
+
+    &:hover {
+      transform: skewX(20deg) rotate(5deg);
+    }
   }
 }
-
-
-
-
-/*
-
-&--stack{
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  cursor: pointer;
-  // gap: 3rem;
-  & .stack{
-      padding: 3rem;
-      background-color: #e62b1e;
-      font-size: 3rem;
-  }
-  & .stack-2{
-      background-color: #fff;
-      color: #e62b1e
-      ;
-  }
-}
-
-*/
