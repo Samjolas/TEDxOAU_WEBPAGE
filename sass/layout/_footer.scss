@@ -2,22 +2,19 @@
 @use "../abstracts" as a;
 
 .footer {
-    margin: 2rem 0;
-    background-color: #000;
+    margin: 0 6rem;
     &__container{
         display: block;
         &--upper{
             display: flex;
             align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
+            justify-content: space-between;
             padding: 8rem 0;
-            // column-gap: 30rem;
+            column-gap: 30rem;
             &_left {
-                // align-self: flex-end;
-                font-size: 3rem;
-                // transform: rotate(270deg);
+                align-self: flex-end;
+                font-size: 4rem;
+                transform: rotate(270deg);
                 // margin-right: 46rem;
                 margin-bottom: 5rem;
             }
@@ -26,43 +23,29 @@
                 flex-direction: column;
                 row-gap: 2rem;
                 .upper_right-item h3{
-                    font-size: 3rem;
+                    font-size: 5rem;
                     color: a.$tedx-red;
-                    padding-bottom: 1rem;
-                } .upper_right-item p{
-                    font-size: 1.4rem;
                 }
             }
         }
 
         &--lower{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: column;
+            display: block;
             margin-top: a.$m-2;
             position: relative;
             &_mail h2{
-                font-size: 2.5rem;
+                font-size: a.$des-font;
+                width: 50%;
                 text-transform: capitalize;
-                text-align: center;
-                padding-bottom:1rem;
-                color: a.$tedx-red;
-            }
-
-            &_mail p{
-                font-size: 1.5rem;
-                text-align: center;
             }
 
             &_input{
                 border: 1px solid #ccc;//to be edited
-                width: 100%;
+                width: max-content;
                 display: flex;
                 align-items: center;
                 column-gap: 1rem;
                 padding: 8px;
-                margin: 2rem 0;
                 & .lower_input-btn{
                     background-color: a.$tedx-red;
                     color: a.$text-color;
@@ -96,28 +79,28 @@
             }
 
             &_links{
-                margin-top: 1rem;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                gap: 2rem;
                 & .footer__list{
                     display: flex;
                     align-items: center;
-                    gap: 6rem;
+                    gap: 2rem;
+                    position: absolute;
+                    right: 0;
                     & ul{
                         display: flex;
                         flex-direction: column;
                         gap: 0.8rem;
                     }
                     &-item{
-                        font-size: 1.4rem;
+                        font-size: a.$default-font;
                         font-weight: a.$fw-7;
                     }
                 }
                 & .footer__social{
                     display: flex;
                     gap: 1rem;
+                    position: absolute;
+                    right: 0;
+                    bottom: -170px;
                 }
                 & .footer__social a{
                     color: a.$tedx-red;
@@ -130,51 +113,3 @@
         }
     }
 }
-
-
-// Media Queries
-
-@media screen and (min-width: 576px) {}
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (max-width: 967px) { //Only For the round scrolling
-
-}
-
-@media screen and (min-width: 968px) { 
-.footer__container--upper{
-    flex-direction: row;
-    gap: 40rem;
-    text-align: left;
-    &_left{
-    transform: rotate(-90deg);
-    font-size: 5rem;
-    align-self: flex-end;
-    }
-
-    .upper_right-item h3{
-        font-size: 5rem;
-    }
-    }
-    .footer__container--lower{
-         flex-direction: row;
-    }
-
-    .footer__container--lower_mail{
-        
-        & h2{
-            font-size: 5rem;
-           text-align: left;
-        }
-        & p{
-            font-size: 2rem;
-            text-align: left;
-        }
-    }
-   .footer__container--lower_input{
-    width: max-content;
-    }
-}
-
-@media screen and (min-width: 1200px) {}
