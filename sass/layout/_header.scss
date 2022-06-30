@@ -69,7 +69,7 @@
 .nav__toggle {
   color: a.$text-color;
   font-weight: a.$fw-6;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 /* show Menu toggle from classList in JS */
@@ -93,7 +93,7 @@
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 2.5rem;
   }
 
   .nav__toggle,
