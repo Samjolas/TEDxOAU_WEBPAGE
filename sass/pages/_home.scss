@@ -1,14 +1,138 @@
 /********* This is Home specific styles ***********/
+@use "../abstracts" as a;
 
-.hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0 6rem;
-  &__div {
-    position: relative;
-    display: block;
-    height: 100vh;
-    width: 95vw;
+.bad-look {
+  display: none;
+}
+.good-look {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.home__container {
+  display: grid;
+  align-items: center;
+  // flex-direction: column;
+  justify-content: center;
+  // gap: 5rem;
+  height: 100vh;
+  &--intro {
+    .intro-title {
+      color: a.$text-color;
+      font-size: 5rem;
+    }
+    .intro-subtitle {
+      color: a.$tedx-red;
+      font-size: 5rem;
+    }
+  }
+  &--brief {
+    h2 {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+  .home-scroll {
+    // display: none;
+    text-align: center;
+    margin-bottom: 3rem;
+    .scroll-link {
+      color: a.$tedx-red;
+      transition: 0.3s;
+    }
+    .scroll-link:hover {
+      color: #fff;
+      transform: translateY(3%);
+    }
+
+    .mouse-btn {
+      font-size: 2rem;
+    }
+    .scroll-name {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: a.$fw-5;
+      margin-right: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .scroll-btn {
+      font-size: 1.5rem;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (max-width: 967px) { //Only For the round scrolling
+  .text__scroll {
+  display: none;
   }
 }
+
+@media screen and (min-width: 968px) {
+  .home{
+    padding: 6rem 0 2rem;
+  }
+  .bad-look {
+    display: block;
+  }
+  .good-look {
+    width: 60%;
+  }
+
+  .home__container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    column-gap: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    &--intro {
+      .intro-title {
+        color: a.$text-color;
+        font-size: 5rem;
+      }
+      .intro-subtitle {
+        color: a.$tedx-red;
+        font-size: 11rem;
+      }
+    }
+  }
+  
+  .home-scroll{ // i remove it from the tablet view upward
+    display: none;
+  }
+
+  .hero {
+    &__text {
+
+      &--main {
+        top: 50%;
+        left: 0;
+      }
+      &--font {
+        text-transform: capitalize;
+        bottom: 6%;
+        right: 10%;
+        color: a.$tedx-red;
+        font-size: a.$des-font;
+      }
+    }
+  }
+
+  .text__scroll {
+  display: block;
+
+}
+  .text__scroll { // i copied this style from from the animation scss
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+}
+
+@media screen and (min-width: 1200px) {}
