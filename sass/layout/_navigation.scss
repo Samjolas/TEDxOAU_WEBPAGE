@@ -1,30 +1,30 @@
 /********* This is for Navigation ***********/
 @use "../abstracts" as a;
-.nav {
-  position: fixed;
-  top: 50%;
-  left: -13%;
-  transform: rotate(-90deg);
+// .nav {
+//   position: fixed;
+//   top: 50%;
+//   left: -13%;
+//   transform: rotate(-90deg);
 
-  &__mini {
-    position: absolute;
-    right: 0;
-    top: 1%;
-    font-size: a.$des-font;
+//   &__mini {
+//     position: absolute;
+//     right: 0;
+//     top: 1%;
+//     font-size: a.$des-font;
 
-    &:hover {
-      transform: translateX(3%);
-    }
-  }
+//     &:hover {
+//       transform: translateX(3%);
+//     }
+//   }
 
-  &__list{
-    text-transform: uppercase;
-    float: left;
-    font-size: a.$default-font;
-    margin-left: a.$m-4;
-    display: block;
-    &:hover {
-      transform: translateY(-20%)
-    }
-  }
-}
+//   &__list{
+//     text-transform: uppercase;
+//     float: left;
+//     font-size: a.$default-font;
+//     margin-left: a.$m-4;
+//     display: block;
+//     &:hover {
+//       transform: translateY(-20%)
+//     }
+//   }
+// }
