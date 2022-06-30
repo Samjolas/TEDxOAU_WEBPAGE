@@ -1,14 +1,14 @@
 /********* This is for Typography ***********/
 @use '../abstracts' as a;
 
-// .heading-main {
-//   color: a.$text-color;
-//   font-size: a.$main-font;
+.heading-main {
+  color: a.$text-color;
+  font-size: a.$main-font;
 
-//   &--red {
-//     color: a.$tedx-red;
-//   }
-// }
+  &--red {
+    color: a.$tedx-red;
+  }
+}
 
 
 
@@ -34,28 +34,28 @@ a,a:visited,a:active{
 }
 
 
-// .hero {
-//   position: relative;
-//   &__text {
-//     position: absolute;
-//     width: 45rem;
-//     &--main { 
-//       top: 50%;
-//       left: 0;
-//     }
-//     &--sub {
-//       top: 22%;
-//       right: 10%;
-//     }
-//     &--font {
-//       text-transform: capitalize;
-//       bottom: 6%;
-//       right: 10%;
-//       color: a.$tedx-red;
-//       font-size: a.$des-font;
-//     }
-//   }
-// }
+.hero {
+  position: relative;
+  &__text {
+    position: absolute;
+    width: 45rem;
+    &--main { 
+      top: 50%;
+      left: 0;
+    }
+    &--sub {
+      top: 22%;
+      right: 10%;
+    }
+    &--font {
+      text-transform: capitalize;
+      bottom: 6%;
+      right: 10%;
+      color: a.$tedx-red;
+      font-size: a.$des-font;
+    }
+  }
+}
 
 
 

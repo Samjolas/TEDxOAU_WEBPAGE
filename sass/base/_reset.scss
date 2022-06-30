@@ -1,5 +1,5 @@
 /********* This is for Reset ***********/
-@use "../abstracts" as a;
+@use '../abstracts' as a;
 
 *,
 ::before,
@@ -8,39 +8,23 @@
 }
 
 html {
-  /*scroll-behavior: smooth;   I commented this becauce of the notification vs studio gave me*/
+  /*scroll-behavior: smooth;   I commented this becauce of the notification vs studio gave me*/  
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  line-height: 1.2;
-  font-family: Helvetica, sans-serif;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: 1.2;
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.section {
-  padding: 10rem 0 2rem;
-}
-
-.container {
-  max-width: 1200px;
-  width: calc(100% - 4rem);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.grid {
-  display: grid;
-  gap: 2rem;
 }

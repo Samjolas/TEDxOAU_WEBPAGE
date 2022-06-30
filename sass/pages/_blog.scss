@@ -1,7 +1,7 @@
 @use "../abstracts" as a;
 
 .blog {
-    // padding: 4rem;
+    padding: 4rem;
     position: relative;
     &__head {
         margin: 5rem 0;
@@ -10,23 +10,20 @@
         text-transform: capitalize;
         color: transparent;
         font-weight: a.$fw-7;
-        font-size: 4rem;
+        font-size: a.$main-font;
         line-height: 89.5%;
         -webkit-text-stroke: 2px a.$text-color;
         margin-bottom: a.$m-bot-2;
     }
-    &__container{
-        display: flex;
-        flex-direction: column;
+    &__body {
+        @include a.flex-row;
         justify-content: space-between;
-        align-items: center;
-        gap: 4rem;
+        // align-items: center;
+        // 
     }
-    &__description {
-        gap: 1rem;
-        .blog__summary{
-            font-size: 1.5rem;
-        }
+    &__des {
+        width: 30%;
+        padding: 3rem 0;
     }
     &__text {
         font-weight: a.$fw-3;
@@ -34,14 +31,13 @@
         margin-bottom: 3rem;
     }
     &__link {
-        display: flex;
-        align-items: center;      
+        display: block;      
         & span {
             color: a.$tedx-red;
-            font-size: a.$default-font;
+            font-size: a.$name-font;
         }
         & i {
-            font-size: 2rem;
+            font-size: a.$name-font;
             color: a.$tedx-red;
             padding-left: a.$p-1;
             align-items: center;
@@ -51,68 +47,26 @@
         }
     }
     &__img {
-        // position: relative;
+        position: relative;
         width: 100%;
-        height: 300px;
     }
     &__next {
         position: absolute;
-        bottom: 2.3rem;
-        right: 2rem;
+        bottom: 4rem;
+        right: 4rem;
         background-color: a.$tedx-red;
         cursor: pointer;
-        height: 5rem;
-        width: 5rem;
-        font-size: a.$default-font;
+        height: 20rem;
+        width: 20rem;
+        font-size: a.$next-font;
         color: transparent;
         @include a.main-center;
         align-items: center;
-        -webkit-text-stroke: 1px a.$text-color;
+        -webkit-text-stroke: 2px a.$text-color;
     }
 }
 
 .de-active {
     display: none;
 }
-
-
-// Media Queries
-
-@media screen and (min-width: 576px) {}
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (max-width: 967px) { //Only For the round scrolling
-
-}
-
-@media screen and (min-width: 968px) { 
-    .blog__header{
-        font-size: a.$main-font;
-        margin-bottom: 3rem;
-    }
-    .blog__container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .blog__description{
-        width: 30%;
-        align-self: flex-start;
-    }
-    .blog__next{
-        position: absolute;
-        bottom: 2rem;
-        right: 7.3rem;
-        height: 20rem;
-        width: 20rem;
-        font-size: a.$next-font;
-    }
-    .blog__img {
-    position: relative;
-    width: 80rem;
-    height: 60rem;
-}
-}
-
-@media screen and (min-width: 1200px) {}
 

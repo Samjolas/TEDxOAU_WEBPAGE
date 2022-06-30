@@ -1,36 +1,30 @@
 @use '../abstracts' as a;
 
-.bg-pattern{
-  background-color: #000000;
-background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23474747' fill-opacity='0.24' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-.bg-pattern-2{
-  background-color: #000000;
-background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23232322' fill-opacity='0.24' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-.bg-text-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .bg-text {
-    font-size: 15rem;
-    transform: rotate(45deg);
-    font-weight: 700;
-    line-height: 0.73;
-    text-align: end;
-    color: rgba(255, 255, 255, 0.04);
-    letter-spacing: 5px;
-  }
-  @media screen and (min-width: 1200px) {
-    .bg-text{
-      font-size: 30rem;
+.bg-pattern {
+  @include a.div-center;
+  height: 850rem;
+  display: flex;
+  flex-direction: row;
+  &__span {
+    margin-top: -(a.$m-3);
+    border: 0.1px dashed rgba(255, 255, 255, 0.05);// t be editted
+    margin-right: a.$m-3;
+    &:nth-child(even) {
+      margin-right: 0;
+      &:not(:last-of-type) {
+        margin-right: a.$m-7;
+      }
     }
-
   }
+}
+
+.bg-text {
+  font-size: a.$big-font;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-weight: a.$fw-7;
+  line-height: .73;
+  text-align: end;
+  color: rgba(255, 255, 255, 0.04);// to be editted
+}
