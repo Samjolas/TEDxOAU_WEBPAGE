@@ -13,9 +13,9 @@
     <title>Meet The Team - TEDxOAU</title>
     <link rel="icon" type="image/x-icon" href="resource/tedx_favicon.png" />
   </head>
-  <body>
+  <body class="bg-pattern">
     <!-- Background Pattern -->
-    <div class="bg-pattern">
+    <!-- <div class="bg-pattern">
       <div class="bg-pattern__span"></div>
       <div class="bg-pattern__span"></div>
       <div class="bg-pattern__span"></div>
@@ -44,7 +44,7 @@
       <div class="bg-pattern__span"></div>
       <div class="bg-pattern__span"></div>
       <div class="bg-pattern__span"></div>
-    </div>
+    </div> -->
     <!--  End Background Pattern -->
     <main class="hero">
       <nav class="nav__mini">
@@ -56,10 +56,14 @@
           <span class="heading-main">The Team</span>
         </h1>
       </header>
-      <section class="team">
-        <div class="team__container">
+      <section class="team section">
+        <div class="team__container container">
           <div class="team__head--row">
-            <img src="resource/team_image.jpeg" alt="Team_page" />
+            <img
+              src="resource/team_image.jpeg"
+              class="team__head-img"
+              alt="Team_page"
+            />
             <p class="team__text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
               numquam officiis illo minima corporis nulla voluptas repellendus
@@ -116,7 +120,7 @@
               rem optio! Hic, ipsa voluptatem. Quaerat.
             </p>
           </div>
-          <div class="team__group">
+          <div class="team__group grid">
             <!-- Zion -->
             <div class="team__body">
               <div class="team__item" data-name="a">
@@ -210,7 +214,7 @@
                   />
                 </figure>
               </div>
-              <div class="team__body--details">
+              <div class="team__details">
                 <h3 class="team__name">Ife Williams</h3>
                 <p class="team__role">Production Lead</p>
               </div>
@@ -226,7 +230,7 @@
                   />
                 </figure>
               </div>
-              <div class="team_details">
+              <div class="team__details">
                 <h3 class="team__name">Ajala Joy Chinemerem</h3>
                 <p class="team__role">
                   Volunteer Recruitment & Management Co-lead
@@ -625,7 +629,7 @@
               </div>
               <div class="preview__bio">
                 <p>
-                  Real Estate, Technology, and Finance are my major interests.
+                  <!-- Real Estate, Technology, and Finance are my major interests.
                   Ever since I was a child, I have been passionate about
                   creating an impact in the real estate sector. I am also one
                   who is in love with tech and these two fields birthed my
@@ -634,7 +638,19 @@
                   things, connecting with friends, and digesting resources
                   concerning the improvement of PropTech 4.0. My 5-year goal is
                   to be a key ingredient in the PropTech Development in Nigeria
-                  whereas making an impact in such sector.
+                  whereas making an impact in such sector. -->
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus fuga eum eius consequuntur quisquam, in ipsa saepe
+                  cupiditate. Sequi recusandae, vel ullam exercitationem dolorem
+                  minima est quasi iusto ipsam optio nihil modi vero,
+                  perferendis quidem nobis provident aspernatur non illum ipsum
+                  soluta cum, ex maxime porro aperiam. Dolore earum nobis
+                  necessitatibus, iure iusto veniam, aliquid minus magnam
+                  ducimus veritatis eaque? Lorem ipsum, dolor sit amet
+                  consectetur adipisicing elit. Optio magnam dolorem sint
+                  nostrum repudiandae reprehenderit laboriosam molestias, ex
+                  voluptas aperiam cumque corrupti, at veritatis ad iure eaque
+                  minima et possimus.
                 </p>
               </div>
             </div>
@@ -676,13 +692,14 @@
         <!-- End of Team Preview -->
       </section>
 
-      <footer class="footer">
+      <footer class="footer team-footer">
         <div class="footer__container--lower">
           <div class="footer__container--lower_mail">
-            <h2>
-              I don't want your number, i'm social and am in facebo...jokes.
-              Email us
-            </h2>
+            <h2>Want to stay updated?</h2>
+            <p>
+              Be the first to hear about our upcoming events,<br />
+              early bird ticket sales and ideas worth sharing. Sign Up
+            </p>
             <div class="footer__container--lower_input">
               <button class="lower_input-btn">Email</button>
               <div class="lower_input-form">
@@ -693,6 +710,7 @@
               </div>
             </div>
           </div>
+
           <div class="footer__container--lower_links">
             <div class="footer__list">
               <ul>
@@ -706,14 +724,20 @@
                 <li class="footer__list-item"><a href="#">Blog</a></li>
                 <li class="footer__list-item"><a href="#">Contact Us</a></li>
               </ul>
-              <!--<ul>
-                            <li class="footer__list-item"><a href="#">FAQs</a></li>
-                            <li class="footer__list-item"><a href="#">Programme Schedule</a></li>
-                            <li class="footer__list-item"><a href="#">Speaker</a></li>
-                            <li class="footer__list-item"><a href="#">Previous Sessions</a></li>
-                            <li class="footer__list-item"><a href="#">Contact Us</a></li>
-                        </ul>-->
+
+              <ul>
+                <li class="footer__list-item"><a href="#">FAQs</a></li>
+                <li class="footer__list-item">
+                  <a href="#">Programme Schedule</a>
+                </li>
+                <li class="footer__list-item"><a href="#">Speaker</a></li>
+                <li class="footer__list-item">
+                  <a href="#">Previous Sessions</a>
+                </li>
+                <li class="footer__list-item"><a href="#">Contact Us</a></li>
+              </ul>
             </div>
+
             <div class="footer__social">
               <a
                 href="https://web.facebook.com/tedxoauofficial/"
@@ -731,8 +755,8 @@
               <a href="https://www.linkedin.com/company/tedxoauofficial/"
                 ><i class="bx bxl-linkedin" target="_blank"></i
               ></a>
-              <!--<a href="#"><i class="bx bxl-youtube"></i></a>
-                        <a href="#"><i class="bx bxl-vimeo"></i></a>-->
+              <!-- <a href="#"><i class="bx bxl-youtube"></i></a>
+              <a href="#"><i class="bx bxl-vimeo"></i></a> -->
             </div>
           </div>
         </div>

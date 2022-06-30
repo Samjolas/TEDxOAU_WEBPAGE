@@ -1,6 +1,8 @@
 /********* This is Home specific styles ***********/
 @use "../abstracts" as a;
-
+.home {
+  padding: 8rem 0 2rem;
+}
 .bad-look {
   display: none;
 }
@@ -43,7 +45,7 @@
     }
     .scroll-link:hover {
       color: #fff;
-      transform: translateY(3%);
+      transform: translateY(-3%);
     }
 
     .mouse-btn {
@@ -60,22 +62,23 @@
       font-size: 1.5rem;
     }
   }
-
 }
 
+@media screen and (min-width: 576px) {
+}
 
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 768px) {
+}
 
-@media screen and (min-width: 768px) {}
-
-@media screen and (max-width: 967px) { //Only For the round scrolling
+@media screen and (max-width: 967px) {
+  //Only For the round scrolling
   .text__scroll {
-  display: none;
+    display: none;
   }
 }
 
 @media screen and (min-width: 968px) {
-  .home{
+  .home {
     padding: 6rem 0 2rem;
   }
   .bad-look {
@@ -101,14 +104,14 @@
       }
     }
   }
-  
-  .home-scroll{ // i remove it from the tablet view upward
+
+  .home-scroll {
+    // i remove it from the tablet view upward
     display: none;
   }
 
   .hero {
     &__text {
-
       &--main {
         top: 50%;
         left: 0;
@@ -124,15 +127,16 @@
   }
 
   .text__scroll {
-  display: block;
+    display: block;
+  }
+  .text__scroll {
+    // i copied this style from from the animation scss
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+}
 
+@media screen and (min-width: 1200px) {
 }
-  .text__scroll { // i copied this style from from the animation scss
-  display: block;
-  position: absolute;
-  top: 10%;
-  left: 0;
-}
-}
-
-@media screen and (min-width: 1200px) {}

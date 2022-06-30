@@ -1,33 +1,61 @@
 /********* This is Team specific styles ***********/
 @use "../abstracts" as a;
 
+.nav__mini {
+  font-size: 2rem;
+  text-align: right;
+  padding: 2rem 2rem 2rem 0rem;
+}
+.heading-main {
+  font-size: a.$des-font;
+}
 
 .team {
   &__head {
     &--row {
-      @include a.flex-row;
+      @include a.flex-column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      .team__head-img {
+        width: 100%;
+        height: 426px;
+        object-fit: cover;
+      }
     }
     &--column {
       @include a.flex-column;
-    }  
+    }
   }
   &__text {
     font-size: a.$default-font;
     letter-spacing: 1px;
-    @include a.main-center;
-    margin: a.$m-3;
+    text-align: left;
+    line-height: 1.5;
+    // @include a.main-center;
+    // margin: a.$m-3;
     font-weight: a.$fw-3;
   }
+
+  .text__big {
+    // font-size: a.$big-font;
+    font-size: 7rem;
+    font-weight: a.$fw-7;
+    color: rgba(255, 255, 255, 0.3); //to be editted
+  }
+
   &__group {
-    @include a.flex-row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 4rem 0;
-    
+    // @include a.flex-row;
+    // flex-wrap: wrap;
+    // justify-content: flex-start;
+    // margin: 4rem 0;
+    margin-top: 5rem;
+    gap: 2.5rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  &__body {
-    width: 32%;
-  }
+  // &__body {
+  //   width: 32%;
+  // }
   &__item {
     position: relative;
     background-color: a.$bg-color;
@@ -48,7 +76,7 @@
     border: 0;
     @include a.mp;
     padding-top: 100%;
-  } 
+  }
   &__img {
     position: absolute;
     bottom: 0;
@@ -56,49 +84,109 @@
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
     filter: grayscale(100%);
-
-    
   }
   &__details {
     color: a.$text-color;
+    text-align: center;
   }
   &__name {
     font-weight: a.$fw-7;
-    font-size: a.$name-font;
+    font-size: 2rem;
     line-height: 4rem;
   }
   &__role {
-    font-size: a.$default-font;
+    font-size: 1.4rem;
     line-height: 1;
     font-weight: a.$fw-7;
     color: a.$tedx-red;
   }
 }
 
+.preview {
+  position: fixed;
+  @include a.div-initial;
+  min-height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(230, 43, 30, 0.35); //adjust this
+  // background-color: #000;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  &__body {
+    display: none;
+    padding: a.$p-2;
+    background: a.$bg-color;
+    color: a.$text-color;
+    position: relative;
+    margin: a.$m-2;
+    width: 60rem;
+    height: auto;
+    overflow: auto;
+    animation-duration: 0.4s;
+    animation-name: popup;
+    &.active {
+      display: inline-block;
+    }
+  }
+  &__btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    margin-bottom: a.$m-2;
+    font-size: 2.5rem;
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__photo {
+    border-radius: 35px;
+    /* filter: grayscale(100%); */
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+  }
+  &__bio {
+    margin-top: a.$m-1;
+    font-size: a.$default-font;
+    text-align: justify;
+    font-weight: a.$fw-3;
+    line-height: 1.4;
+  }
+  &__name {
+    font-size: 2rem;
+    line-height: 1.75rem;
+    font-weight: a.$fw-6;
+    margin-bottom: 1rem;
+  }
+  &__role {
+    font-size: a.$small-font;
+    line-height: 1.25rem;
+    font-weight: a.$fw-5;
+  }
+  &-btn-close i {
+    font-size: 2rem;
+  }
+}
 
-
-
-
-
+.team-footer{
+  margin-top: 15rem ;
+}
 
 // /*======== HEADER ========*/
 // .header {
 //   padding: 2rem 0;
 // }
 
-
 /*=========== MAIN ===========*/
 // TEAM
 
-
-
-
-
-
-
-
 /* ==========TEAM PREVIEW STYLES ======== */
-
 
 /*=============== MEDIA QUERIES ===============*/
 /* For medium devices */
@@ -115,14 +203,58 @@
     gap: 1.5rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
 }
 
 /* For large devices */
 @media screen and (min-width: 968px) {
+
+  
+.nav__mini {
+  font-size: 3rem;
+  text-align: right;
+  padding: 2rem 2rem 2rem 0rem;
+}
+.heading-main {
+  font-size: a.$main-font;
+}
   .team__group {
     gap: 1.5rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .team {
+    &__head {
+      &--row {
+        @include a.flex-row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10rem;
+        .team__head-img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+      &--column {
+        @include a.flex-column;
+      }
+    }
+    &__text {
+      font-size: a.$default-font;
+      letter-spacing: 1px;
+      text-align: left;
+      line-height: 1.5;
+      // @include a.main-center;
+      // margin: a.$m-3;
+      font-weight: a.$fw-3;
+    }
+
+    .text__big {
+      // font-size: a.$big-font;
+      font-size: 30rem;
+      font-weight: a.$fw-7;
+      color: rgba(255, 255, 255, 0.3); //to be editted
+    }
   }
 }
 
@@ -133,8 +265,6 @@
   }*/
 }
 
-
-
 @media screen and (min-width: 768px) {
   :root {
     --biggest-font-size: 4rem;
@@ -142,7 +272,7 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }

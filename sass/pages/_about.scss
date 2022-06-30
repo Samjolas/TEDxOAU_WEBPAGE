@@ -1,25 +1,64 @@
-@use '../abstracts' as a;
+@use "../abstracts" as a;
 
-.about {
+.about-body{
   background-color: a.$tedx-red;
-  margin: 0 13rem;
-
+}
+.nav__mini {
+  font-size: 2rem;
+  text-align: right;
+  padding: 2rem 2rem 2rem 0rem;
+}
+.about{
   &__header {
-    background-image: linear-gradient(rgba(255, 0, 0, 0.383), rgba(255, 0, 0, 0.383) ), url(../resource/about.jpg);
+
+    // margin: 0 13rem;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.383),rgba(255, 0, 0, 0.383)),
+    url(../resource/about.jpg);
     height: 80vh;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
-
-  &__heading {
+    &__header-title {
     text-align: center;
     font-weight: 700;
-    font-size: 12.8rem;
+    font-size: 8rem;
     text-transform: uppercase;
   }
 
-  &__text {
-    font-weight: 300;
-    font-size: 1.6rem;
-    text-align: center;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    &--description {
+      &_title {
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        // text-align: center;
+      }
+      &_summary {
+        font-size: 1.6rem;
+        font-size: 3000;
+        line-height: 1.5;
+      }
+    }
   }
+}
+
+@media screen and (min-width: 968px) {
+    .about__header {
+  
+      margin: 0 13rem;
+      background-image: linear-gradient(rgba(255, 0, 0, 0.383),rgba(255, 0, 0, 0.383)),
+      url(../resource/about.jpg);
+      height: 80vh;
+      background-repeat: no-repeat;
+      // background-position: center;
+      // background-size: cover;
+    }
+  
+
 }
