@@ -4,7 +4,9 @@
   padding: 8rem 0 2rem;
 }
 .bad-look {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 .good-look {
   display: flex;
@@ -17,24 +19,47 @@
   align-items: center;
   // flex-direction: column;
   justify-content: center;
-  // gap: 5rem;
-  height: 100vh;
+  gap: 5rem;
+  margin-top: 5rem;
+  // height: 100vh;
   &--intro {
     .intro-title {
       color: a.$text-color;
-      font-size: 5rem;
+      font-size: 2rem;
     }
     .intro-subtitle {
       color: a.$tedx-red;
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
   &--brief {
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+      font-weight: 100;
       line-height: 1.5;
     }
   }
+  .hero {
+    &__text {
+      &--main {
+        top: 50%;
+        left: 0;
+      }
+      &--sub {
+        font-size: 1.4rem;
+        font-weight: 100;
+      }
+      &--font {
+        text-transform: capitalize;
+        bottom: 6%;
+        right: 10%;
+        color: a.$tedx-red;
+        font-weight: 100;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
   .home-scroll {
     // display: none;
     text-align: center;
@@ -79,28 +104,39 @@
 
 @media screen and (min-width: 968px) {
   .home {
-    padding: 6rem 0 2rem;
+    padding: 0;
   }
-  .bad-look {
-    display: block;
-  }
+  // .bad-look {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 6rem;
+  // }
   .good-look {
-    width: 60%;
+    margin-top: 10rem;
   }
 
   .home__container {
     align-items: flex-start;
     justify-content: flex-start;
-    column-gap: 10rem;
-    grid-template-columns: repeat(2, 1fr);
+    // column-gap: 10rem;
+    grid-template-columns: 70% 30%;
+    height: 100vh;
+    margin-top: 0;
     &--intro {
       .intro-title {
         color: a.$text-color;
-        font-size: 5rem;
+        font-size: 10rem;
       }
       .intro-subtitle {
         color: a.$tedx-red;
-        font-size: 11rem;
+        font-size: 10rem;
+      }
+    }
+    &--brief {
+      width: 50%;
+      & h2 {
+        font-size: 1.4rem;
+        font-weight: 100;
       }
     }
   }
@@ -116,12 +152,16 @@
         top: 50%;
         left: 0;
       }
+      &--sub {
+        font-size: 1.4rem;
+        font-weight: 100;
+      }
       &--font {
         text-transform: capitalize;
         bottom: 6%;
         right: 10%;
         color: a.$tedx-red;
-        font-size: a.$des-font;
+        font-size: 3rem;
       }
     }
   }
@@ -131,10 +171,7 @@
   }
   .text__scroll {
     // i copied this style from from the animation scss
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 0;
+    align-self: flex-start;
   }
 }
 
