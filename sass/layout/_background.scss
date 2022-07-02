@@ -1,9 +1,9 @@
 @use '../abstracts' as a;
 
-.bg-pattern{
-background-color: #000000;
-background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%230e0e0e' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
+// .bg-pattern{
+// background-color: #000000;
+// background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%230e0e0e' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+// }
 
 
 
@@ -12,8 +12,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='
     position: fixed;
     bottom: 0%;
     right: 0%;
-    font-size: 15rem;
-    font-weight: 700;
+    font-size: 6.5rem;
+    font-weight: 900;
     line-height: 0.73;
     text-align: end;
     color: rgba(255, 255, 255, 0.04);
@@ -21,7 +21,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='
 }
   @media screen and (min-width: 1200px) {
     .bg-text{
-      font-size: 30rem;
+      font-size: 25rem;
     }
 
   }

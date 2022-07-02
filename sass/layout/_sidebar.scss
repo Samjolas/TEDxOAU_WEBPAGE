@@ -13,6 +13,7 @@
     width: 100%;
     border: 1px solid a.$tedx-red;
     @include a.main-center;
+    cursor: pointer;
     &--white {
       background-color: a.$text-color;
       border: 1px solid a.$text-color;
@@ -25,10 +26,6 @@
     margin: auto;
     &--red {
       color: a.$tedx-red;
-    }
-
-    &:hover {
-      transform: skewX(20deg) rotate(5deg);
     }
   }
   

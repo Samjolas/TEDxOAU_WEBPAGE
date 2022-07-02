@@ -1,85 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ================BOX ICONS===================== -->
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="dist/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ================BOX ICONS===================== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/main.css" />
 
-      <!-- ================FONT AWESOME===================== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>HOME-TEDxOAU</title>
-  <link rel="icon" type="image/x-icon" href="resource/tedx_favicon.png">
-</head>
-<body class="bg-pattern">
-  <div class="bg-text-container container">
-    <div class="bg-text">TEDx<br>OAU</div>
-  </div>
-  <!-- ================HEADER============ -->
+    <!-- ================FONT AWESOME===================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>HOME-TEDxOAU</title>
+    <link rel="icon" type="image/x-icon" href="resource/tedx_favicon.png" />
+  </head>
+  <body class="bg-pattern">
+    <div class="bg-text-container container">
+      <div class="bg-text">TEDxOAU</div>
+    </div>
+    <!-- ================HEADER============ -->
     <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <div class="nav__logo">
+          <a href="#" class="nav__logo">
+            <img src="./resource/tedx_oau.png" alt="TEDxOAU Logo" />
+          </a>
+        </div>
 
-        <nav class="nav container">
-
-            <div class="nav__logo">
-                <a href="#" class="nav__logo">
-                    <img src="./resource/tedx_oau.png" alt="TEDxOAU Logo">
-                </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <div class="nav-close" id="nav-close">
+              <i class="bx bx-x-circle"></i>
             </div>
+            <li class="nav__items">
+              <a href="#home" class="nav__link active--link">Home</a>
+            </li>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__items"><a href="#home" class="nav__link active--link">Home</a></li>
+            <li class="nav__items">
+              <a href="team.html" class="nav__link">Team</a>
+            </li>
 
-                    <li class="nav__items"><a href="team.html" class="nav__link">Team</a></li>
-                    
-                    <li class="nav__items"><a href="about.html" class="nav__link">About</a></li>
+            <li class="nav__items">
+              <a href="about.html" class="nav__link">About</a>
+            </li>
 
-                    <li class="nav__items"><a href="https://tedxoau.com/blog/" class="nav__link">Blog</a></li>
+            <li class="nav__items">
+              <a href="https://tedxoau.com/blog/" class="nav__link">Blog</a>
+            </li>
+          </ul>
+        </div>
 
-                    <div class="nav-close" id="nav-close">
-                        <i class='bx bx-x-circle'></i>
-                    </div> 
-                   
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
-
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
 
     <!-- ================MAIN============ -->
-   
-    <main class="main"> 
-       <!-- ================Home Section============ -->
+
+    <main class="main">
+      <!-- ================Home Section============ -->
       <section class="home" id="home">
+        <div class="home__container--intro container">
+          <h1>
+            <span class="intro-title">Welcome to<br /></span>
+            <span class="intro-subtitle" id="word">TEDxOAU</span>
+          </h1>
+        </div>
+
         <div class="home__container container">
-        <div class="good-look">
-
-          <div class="home__container--intro">
-            <h1>
-              <span class="intro-title">Welcome to<br></span> 
-              <span class="intro-subtitle" id="word">TEDxOAU</span>
-            </h1>
+          <div class="good-look">
+            <div class="home__container--brief">
+              <h2>
+                In the spirit of ideas worth spreading, TEDx is a program of
+                local, self-organized events that bring people together to share
+                a TED-like experience. At a TEDx event, TED Talks video and live
+                speakers combine to spark deep discussion and connection. in
+                summary we’re TEDX by the greatest, for the greatest
+              </h2>
+            </div>
+            <embed src="resource/scroll-animation.gif" class="text__scroll" />
           </div>
 
-          <div class="home__container--brief">
-            <h2>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. in summary we’re TEDX by the greatest, for the greatest</h2>
+          <div class="bad-look">
+            <h2 class="hero__text hero__text--sub">
+              <strong>We are...</strong> <br />
+              <br />
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur, from a Lorem Ipsum
+              passage, and going through the cites of the word in classical
+              literature, discovered the undoubtable source. Lorem Ipsum comes
+              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+              BC. This book is a treatise on the theory of ethics, very popular
+              during the Renaissance. The first line of Lorem Ipsum, "Lorem
+              ipsum dolor sit amet..", comes from a line in section 1.10.32
+            </h2>
+            <h2 class="hero__text hero__text--font">
+              this site and all it’s components in pay homage to helvetica and
+              swiss typography design
+            </h2>
           </div>
-        </div>
-
-        <div class="bad-look">
-          <h2 class="hero__text hero__text--sub"> <strong>We are...</strong> <br> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32</h2>
-          <h2 class="hero__text hero__text--font">this site and all it’s components in pay homage to helvetica and swiss typography design</h2>
-        </div>
-
-        <embed src="resource/scroll-animation.gif" class="text__scroll">
 
           <div class="home-scroll">
             <a href="#" class="scroll-link">
@@ -87,99 +119,171 @@
               <span class="scroll-name">Scroll down</span>
               <i class="bx bx-down-arrow-alt scroll-btn"></i>
             </a>
-            
           </div>
-
         </div>
-      </section>  
+      </section>
 
-       <!-- ================Blog Section============ -->
-      <section class="blog section" id="blog">
+      <!-- ================Blog Section============ -->
+      <section class="blog section container" id="blog">
+        <div class="blog__section--logo container">
+          <img src="./resource/tedx_oau.png" alt="" />
+        </div>
+
         <div class="blog__wrapper">
-          <h2 class="blog__header container">Is Volunteering <br>Worth It?? </h2>
-            <article class="blog__container container">
-
-                <div class="blog__description  grid">
-                    <p class="blog__summary">A large group of volunteers dedicate their time and energy to set up events and build our community, acting as personal ambassadors for change and innovation. With their professional skills and knowledge, our volunteers bring ideas to life from behind the scenes to the day of the events. We are a hundred percent volunteer-led organisation and are run solely on the enthusiasm of our partners, collaborators and volunteers. Together we bring ideas to life that go beyond limitation and pushes boundaries to create a better city, a better world Be part of this movement, join us!</p>
-                    <a href="https://tedxoau.com/blog/" class="blog__link"><span>See More</span><i class="bx bx-right-arrow-alt"></i></a>
-                </div>
-                  <!--==================== TEAM1 ====================-->
-                  <div class="blog__contents">
-                    <img src="./resource/sample_blog.png" alt="blog_post" class="blog__img">
-                  </div>              
-        
-            </article>
+          <h2 class="blog__header container">
+            Is Volunteering <br />Worth It??
+          </h2>
+          <article class="blog__container container">
+            <div class="blog__description grid">
+              <p class="blog__summary">
+                A large group of volunteers dedicate their time and energy to
+                set up events and build our community, acting as personal
+                ambassadors for change and innovation. With their professional
+                skills and knowledge, our volunteers bring ideas to life from
+                behind the scenes to the day of the events. We are a hundred
+                percent volunteer-led organisation and are run solely on the
+                enthusiasm of our partners, collaborators and volunteers.
+                Together we bring ideas to life that go beyond limitation and
+                pushes boundaries to create a better city, a better world Be
+                part of this movement, join us!
+              </p>
+              <a href="https://tedxoau.com/blog/" class="blog__link"
+                ><span>See More</span><i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+            <!--==================== TEAM1 ====================-->
+            <div class="blog__contents">
+              <img
+                src="./resource/sample_blog.png"
+                alt="blog_post"
+                class="blog__img"
+              />
+            </div>
+          </article>
         </div>
 
         <div class="blog__wrapper de-active">
-          <h2 class="blog__header container">Is Volunteering <br>Worth It??? </h2>
-            <article class="blog__container container">
-
-                <div class="blog__description  grid">
-                    <p class="blog__summary">A large group of volunteers dedicate their time and energy to set up events and build our community, acting as personal ambassadors for change and innovation. With their professional skills and knowledge, our volunteers bring ideas to life from behind the scenes to the day of the events. We are a hundred percent volunteer-led organisation and are run solely on the enthusiasm of our partners, collaborators and volunteers. Together we bring ideas to life that go beyond limitation and pushes boundaries to create a better city, a better world Be part of this movement, join us!</p>
-                    <a href="https://tedxoau.com/blog/" class="blog__link"><span>See More</span><i class="bx bx-right-arrow-alt"></i></a>
-                </div>
-                  <!--==================== TEAM1 ====================-->
-                  <div class="blog__contents">
-                    <img src="./resource/sample_blog.png" alt="blog_post" class="blog__img">
-                  </div>              
-        
-            </article>
+          <h2 class="blog__header container">
+            Is Volunteering <br />Worth It???
+          </h2>
+          <article class="blog__container container">
+            <div class="blog__description grid">
+              <p class="blog__summary">
+                A large group of volunteers dedicate their time and energy to
+                set up events and build our community, acting as personal
+                ambassadors for change and innovation. With their professional
+                skills and knowledge, our volunteers bring ideas to life from
+                behind the scenes to the day of the events. We are a hundred
+                percent volunteer-led organisation and are run solely on the
+                enthusiasm of our partners, collaborators and volunteers.
+                Together we bring ideas to life that go beyond limitation and
+                pushes boundaries to create a better city, a better world Be
+                part of this movement, join us!
+              </p>
+              <a href="https://tedxoau.com/blog/" class="blog__link"
+                ><span>See More</span><i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+            <!--==================== TEAM1 ====================-->
+            <div class="blog__contents">
+              <img
+                src="./resource/sample_blog.png"
+                alt="blog_post"
+                class="blog__img"
+              />
+            </div>
+          </article>
         </div>
 
         <div class="blog__wrapper de-active">
-          <h2 class="blog__header container">Is Volunteering <br>Worth It???😍 </h2>
-            <article class="blog__container container">
-
-                <div class="blog__description  grid">
-                    <p class="blog__summary">A large group of volunteers dedicate their time and energy to set up events and build our community, acting as personal ambassadors for change and innovation. With their professional skills and knowledge, our volunteers bring ideas to life from behind the scenes to the day of the events. We are a hundred percent volunteer-led organisation and are run solely on the enthusiasm of our partners, collaborators and volunteers. Together we bring ideas to life that go beyond limitation and pushes boundaries to create a better city, a better world Be part of this movement, join us!</p>
-                    <a href="https://tedxoau.com/blog/" class="blog__link"><span>See More</span><i class="bx bx-right-arrow-alt"></i></a>
-                </div>
-                  <!--==================== TEAM1 ====================-->
-                  <div class="blog__contents">
-                    <img src="./resource/sample_blog.png" alt="blog_post" class="blog__img">
-                  </div>              
-        
-            </article>
+          <h2 class="blog__header container">
+            Is Volunteering <br />Worth It???😍
+          </h2>
+          <article class="blog__container container">
+            <div class="blog__description grid">
+              <p class="blog__summary">
+                A large group of volunteers dedicate their time and energy to
+                set up events and build our community, acting as personal
+                ambassadors for change and innovation. With their professional
+                skills and knowledge, our volunteers bring ideas to life from
+                behind the scenes to the day of the events. We are a hundred
+                percent volunteer-led organisation and are run solely on the
+                enthusiasm of our partners, collaborators and volunteers.
+                Together we bring ideas to life that go beyond limitation and
+                pushes boundaries to create a better city, a better world Be
+                part of this movement, join us!
+              </p>
+              <a href="https://tedxoau.com/blog/" class="blog__link"
+                ><span>See More</span><i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+            <!--==================== TEAM1 ====================-->
+            <div class="blog__contents">
+              <img
+                src="./resource/sample_blog.png"
+                alt="blog_post"
+                class="blog__img"
+              />
+            </div>
+          </article>
         </div>
 
         <div class="blog__wrapper de-active">
-          <h2 class="blog__header container">Is Volunteering <br>Worth It?????? </h2>
-            <article class="blog__container container">
-
-                <div class="blog__description  grid">
-                    <p class="blog__summary">A large group of volunteers dedicate their time and energy to set up events and build our community, acting as personal ambassadors for change and innovation. With their professional skills and knowledge, our volunteers bring ideas to life from behind the scenes to the day of the events. We are a hundred percent volunteer-led organisation and are run solely on the enthusiasm of our partners, collaborators and volunteers. Together we bring ideas to life that go beyond limitation and pushes boundaries to create a better city, a better world Be part of this movement, join us!</p>
-                    <a href="https://tedxoau.com/blog/" class="blog__link"><span>See More</span><i class="bx bx-right-arrow-alt"></i></a>
-                </div>
-                  <!--==================== TEAM1 ====================-->
-                  <div class="blog__contents">
-                    <img src="./resource/sample_blog.png" alt="blog_post" class="blog__img">
-                  </div>              
-        
-            </article>
+          <h2 class="blog__header container">
+            Is Volunteering <br />Worth It??????
+          </h2>
+          <article class="blog__container container">
+            <div class="blog__description grid">
+              <p class="blog__summary">
+                A large group of volunteers dedicate their time and energy to
+                set up events and build our community, acting as personal
+                ambassadors for change and innovation. With their professional
+                skills and knowledge, our volunteers bring ideas to life from
+                behind the scenes to the day of the events. We are a hundred
+                percent volunteer-led organisation and are run solely on the
+                enthusiasm of our partners, collaborators and volunteers.
+                Together we bring ideas to life that go beyond limitation and
+                pushes boundaries to create a better city, a better world Be
+                part of this movement, join us!
+              </p>
+              <a href="https://tedxoau.com/blog/" class="blog__link"
+                ><span>See More</span><i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+            <!--==================== TEAM1 ====================-->
+            <div class="blog__contents">
+              <img
+                src="./resource/sample_blog.png"
+                alt="blog_post"
+                class="blog__img"
+              />
+            </div>
+          </article>
         </div>
 
-        <div class="blog__next" id="next"> <p>Next</p></div> 
+        <div class="blog__next" id="next"><p>Next</p></div>
       </section>
 
       <!-- ================Communities Section============ -->
       <section class="updates-section section">
         <div class="updates container">
-          <a href="#" class="updates__box"> <span class="updates__text">Community</span></a>
-          <a href="#" class="updates__box updates__box--white"> <span class="updates__text updates__text--red">Sponsor</span> </a>
-          <a href="#" class="updates__box"> <span class="updates__text">Volunteer</span> </a>
+          <a href="#" class="updates__box">
+            <span class="updates__text">Community</span></a
+          >
+          <a href="#" class="updates__box updates__box--white">
+            <span class="updates__text updates__text--red">Sponsor</span>
+          </a>
+          <a href="#" class="updates__box">
+            <span class="updates__text">Volunteer</span>
+          </a>
         </div>
       </section>
-
     </main>
 
-
-     <!-- ================FOOTER============ -->
+    <!-- ================FOOTER============ -->
     <footer class="footer">
       <div class="footer__container container">
-
         <div class="footer__container--upper">
-
           <div class="footer__container--upper_left">
             <h2>Why Attend?</h2>
           </div>
@@ -187,79 +291,136 @@
           <div class="footer__container--upper_right">
             <div class="upper_right-item">
               <h3>Meet</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo excepturi placeat alias doloribus dignissimos consequuntur, minus nemo laboriosam repellat dolor?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, molestias? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, tenetur aliquid deleniti facere, nemo est non provident doloremque enim culpa eos autem eligendi sequi suscipit sunt corrupti, explicabo harum temporibus. Optio odit ea necessitatibus non! Aliquam, iure possimus praesentium soluta expedita alias eum ratione minus? Qui esse repellendus deserunt optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum nobis perspiciatis dicta iusto rerum asperiores distinctio nihil doloribus sed?</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                excepturi placeat alias doloribus dignissimos consequuntur,
+                minus nemo laboriosam repellat dolor?Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Sed, molestias? Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Repudiandae,
+                tenetur aliquid deleniti facere, nemo est non provident
+                doloremque enim culpa eos autem eligendi sequi suscipit sunt
+                corrupti, explicabo harum temporibus. Optio odit ea
+                necessitatibus non! Aliquam, iure possimus praesentium soluta
+                expedita alias eum ratione minus? Qui esse repellendus deserunt
+                optio! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ut harum nobis perspiciatis dicta iusto rerum asperiores
+                distinctio nihil doloribus sed?
+              </p>
             </div>
 
             <div class="upper_right-item">
               <h3>Connect</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus fuga doloremque minus sapiente laudantium, nisi corrupti ducimus aspernatur iste fugiat minima cumque est animi illo sit atque expedita? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consequuntur odit perferendis voluptates id ratione ab quos magni, maiores adipisci ipsam asperiores similique sit sunt officia omnis rerum dolore excepturi. Eligendi itaque cupiditate, non beatae nam asperiores ipsa nisi voluptatum provident earum vel consequatur illo tempore impedit vero velit quaerat laudantium totam, pariatur sequi. Illum commodi, dignissimos delectus animi minima quia nam mollitia beatae tempore non odio inventore eos rerum obcaecati consequatur sunt, ad voluptas repellendus, quisquam tempora eligendi! Est?</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                voluptatibus fuga doloremque minus sapiente laudantium, nisi
+                corrupti ducimus aspernatur iste fugiat minima cumque est animi
+                illo sit atque expedita? Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptas, consequuntur odit perferendis
+                voluptates id ratione ab quos magni, maiores adipisci ipsam
+                asperiores similique sit sunt officia omnis rerum dolore
+                excepturi. Eligendi itaque cupiditate, non beatae nam asperiores
+                ipsa nisi voluptatum provident earum vel consequatur illo
+                tempore impedit vero velit quaerat laudantium totam, pariatur
+                sequi. Illum commodi, dignissimos delectus animi minima quia nam
+                mollitia beatae tempore non odio inventore eos rerum obcaecati
+                consequatur sunt, ad voluptas repellendus, quisquam tempora
+                eligendi! Est?
+              </p>
             </div>
 
             <div class="upper_right-item">
               <h3>Talk</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus fuga doloremque minus sapiente laudantium, nisi corrupti ducimus aspernatur iste fugiat minima cumque est animi illo sit atque expedita? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident nulla hic porro pariatur vero ad minus. Ipsum odit corrupti sequi eum repudiandae praesentium molestias odio natus facilis commodi distinctio blanditiis quaerat est hic velit expedita dolores doloribus sunt voluptates animi, accusantium quisquam perspiciatis! Hic omnis nostrum veniam esse error obcaecati temporibus provident, nihil, corporis voluptatibus maxime voluptas vel earum fugiat, iusto quo? Magni vitae soluta inventore fugit. Fuga quo nesciunt quidem temporibus? Repudiandae veniam, sequi minus ullam eos eum fuga.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                voluptatibus fuga doloremque minus sapiente laudantium, nisi
+                corrupti ducimus aspernatur iste fugiat minima cumque est animi
+                illo sit atque expedita? Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Provident nulla hic porro pariatur vero ad
+                minus. Ipsum odit corrupti sequi eum repudiandae praesentium
+                molestias odio natus facilis commodi distinctio blanditiis
+                quaerat est hic velit expedita dolores doloribus sunt voluptates
+                animi, accusantium quisquam perspiciatis! Hic omnis nostrum
+                veniam esse error obcaecati temporibus provident, nihil,
+                corporis voluptatibus maxime voluptas vel earum fugiat, iusto
+                quo? Magni vitae soluta inventore fugit. Fuga quo nesciunt
+                quidem temporibus? Repudiandae veniam, sequi minus ullam eos eum
+                fuga.
+              </p>
             </div>
-
           </div>
-
         </div>
 
         <div class="footer__container--lower">
-
           <div class="footer__container--lower_mail">
-              <h2>Want to stay updated?</h2>
-              <p>Be the first to hear about our upcoming events,<br> early bird ticket sales and ideas worth sharing. Sign Up</p>
-              <div class="footer__container--lower_input">
-                  <button class="lower_input-btn">Email</button>
-                  <div class="lower_input-form"><input type="text" placeholder="Your Email"></div>
-                  <div class="lower_input-icon">
-                      <a href="#"><i class="bx bx-right-arrow-alt"></i></a>
-                  </div>
+            <h2>Want to stay updated?</h2>
+            <p>
+              Be the first to hear about our upcoming events,<br />
+              early bird ticket sales and ideas worth sharing. Sign Up
+            </p>
+            <div class="footer__container--lower_input">
+              <button class="lower_input-btn">Email</button>
+              <div class="lower_input-form">
+                <input type="text" placeholder="Your Email" />
               </div>
+              <div class="lower_input-icon">
+                <a href="#"><i class="bx bx-right-arrow-alt"></i></a>
+              </div>
+            </div>
           </div>
 
           <div class="footer__container--lower_links">
-              <div class="footer__list">
-                  <ul>
-                      <li class="footer__list-item"><a href="about.html">About</a></li>
-                      <li class="footer__list-item"><a href="team.html">Meet Our Team</a></li>
-                      <li class="footer__list-item"><a href="#">Sponsor</a></li>
-                      <li class="footer__list-item"><a href="#">Blog</a></li>
-                      <li class="footer__list-item"><a href="#">Contact Us</a></li>
-                  </ul>
+            <div class="footer__list">
+              <ul>
+                <li class="footer__list-item">
+                  <a href="about.html">About</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="team.html">Meet Our Team</a>
+                </li>
+                <li class="footer__list-item"><a href="#">Sponsor</a></li>
+                <li class="footer__list-item"><a href="#">Blog</a></li>
+                <li class="footer__list-item"><a href="#">Contact Us</a></li>
+              </ul>
 
-                  <ul>
-                      <li class="footer__list-item"><a href="#">FAQs</a></li>
-                      <li class="footer__list-item"><a href="#">Programme Schedule</a></li>
-                      <li class="footer__list-item"><a href="#">Speaker</a></li>
-                      <li class="footer__list-item"><a href="#">Previous Sessions</a></li>
-                      <li class="footer__list-item"><a href="#">Contact Us</a></li>
-                  </ul>
+              <ul>
+                <li class="footer__list-item"><a href="#">FAQs</a></li>
+                <li class="footer__list-item">
+                  <a href="#">Programme Schedule</a>
+                </li>
+                <li class="footer__list-item"><a href="#">Speaker</a></li>
+                <li class="footer__list-item">
+                  <a href="#">Previous Sessions</a>
+                </li>
+                <li class="footer__list-item"><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
 
-              </div>
-
-              <div class="footer__social">
-              <a href="https://web.facebook.com/tedxoauofficial/" target="_blank"><i class="bx bxl-facebook"></i></a>
-              <a href="https://twitter.com/tedxoauofficial?t=2DYvKyfYjTuPeP8kJAMtdw&s=09"><i class="bx bxl-twitter" target="_blank"></i></a> 
-              <a href="https://www.instagram.com/accounts/login/?next=/tedxoauofficial/"><i class="bx bxl-instagram" target="_blank"></i></a>
-              <a href="https://www.linkedin.com/company/tedxoauofficial/"><i class="bx bxl-linkedin" target="_blank"></i></a>
+            <div class="footer__social">
+              <a
+                href="https://web.facebook.com/tedxoauofficial/"
+                target="_blank"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+              <a
+                href="https://twitter.com/tedxoauofficial?t=2DYvKyfYjTuPeP8kJAMtdw&s=09"
+                ><i class="bx bxl-twitter" target="_blank"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/accounts/login/?next=/tedxoauofficial/"
+                ><i class="bx bxl-instagram" target="_blank"></i
+              ></a>
+              <a href="https://www.linkedin.com/company/tedxoauofficial/"
+                ><i class="bx bxl-linkedin" target="_blank"></i
+              ></a>
               <!-- <a href="#"><i class="bx bxl-youtube"></i></a>
               <a href="#"><i class="bx bxl-vimeo"></i></a> -->
-              </div>  
-
+            </div>
           </div>
-
         </div>
-
       </div>
     </footer>
-      
+
     <!-- This is the javascript code for the TEDxOAU animation on the home page-->
     <script src="vendor/js/script.js"></script>
-
-</body>
-
-
-
+  </body>
 </html>
-

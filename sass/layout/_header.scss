@@ -27,7 +27,7 @@
     position: fixed;
     right: -100%;
     top: 0%;
-    width: 100%;
+    width: 30%;
     height: 100vh;
     padding: 1.5rem 0rem;
     background-color: a.$tedx-red;
@@ -42,9 +42,6 @@
 }
 
 .nav-close {
-  position: absolute;
-  right: 2.5rem;
-  top: 1rem;
   cursor: pointer;
   font-size: 1.5rem;
   color: var(--title-color);
@@ -68,17 +65,17 @@
 .nav__link,
 .nav__toggle {
   color: a.$text-color;
-  font-weight: a.$fw-6;
-  font-size: 2.5rem;
 }
 
 /* show Menu toggle from classList in JS */
 .show-menu {
   right: 0;
 }
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+}
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+}
 
 @media screen and (min-width: 968px) {
   .header {
@@ -95,6 +92,10 @@
     flex-direction: row;
     column-gap: 2.5rem;
   }
+  .nav__link {
+    font-weight: a.$fw-3;
+    font-size: 2rem;
+  }
 
   .nav__toggle,
   .nav-close {
@@ -110,5 +111,6 @@
   .header {
     top: 50%;
     left: -48%;
+    background-color: none;
   }
 }

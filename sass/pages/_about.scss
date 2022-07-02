@@ -1,7 +1,7 @@
 @use "../abstracts" as a;
 
 .about-body{
-  background-color: a.$tedx-red;
+  background-color: a.$bg-color;
 }
 .nav__mini {
   font-size: 2rem;
@@ -12,8 +12,7 @@
   &__header {
 
     // margin: 0 13rem;
-    background-image: linear-gradient(rgba(255, 0, 0, 0.383),rgba(255, 0, 0, 0.383)),
-    url(../resource/about.jpg);
+      background-image:url(../resource/about.jpg);
     height: 80vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,8 +51,7 @@
     .about__header {
   
       margin: 0 13rem;
-      background-image: linear-gradient(rgba(255, 0, 0, 0.383),rgba(255, 0, 0, 0.383)),
-      url(../resource/about.jpg);
+      background-image:url(../resource/about.jpg);
       height: 80vh;
       background-repeat: no-repeat;
       // background-position: center;
