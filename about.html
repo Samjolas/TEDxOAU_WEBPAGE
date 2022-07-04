@@ -14,14 +14,51 @@
     <link rel="icon" type="image/x-icon" href="resource/tedx_favicon.png" />
   </head>
   <body class="about-body">
-    <nav class="nav__mini">
+           <!-- ================HEADER============ -->
+    <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <div class="nav__logo">
+          <a href="#" class="nav__logo">
+            <img src="./resource/tedx_oau.png" alt="TEDxOAU Logo" />
+          </a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <div class="nav-close" id="nav-close">
+              <i class="bx bx-x-circle"></i>
+            </div>
+            <li class="nav__items">
+              <a href="index.html" class="nav__link active--link">Home</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="team.html" class="nav__link">Team</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="about.html" class="nav__link">About</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="https://tedxoau.com/blog/" class="nav__link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- <nav class="nav__mini">
       <a href="team.html" target="_blank"
         ><i class="bx bx-left-arrow-alt"></i
       ></a>
       <a href="https://tedxoau.com/blog/" target="_blank"
         ><i class="bx bx-right-arrow-alt"></i
       ></a>
-    </nav>
+    </nav> -->
     <header class="about__header"></header>
     <h2 class="about__header-title">About</h2>
     
@@ -99,7 +136,7 @@
           <div class="footer__container--lower_mail">
             <h2>Want to stay updated?</h2>
             <p>
-              TEDxOAU is going to take Ogbafemi by storm and we want to put you in its eye:<br>       but we’d like to get in your DMs first. <br>
+              TEDxOAU is going to take Obafemi by storm and we want to put you in its eye:<br>       but we’d like to get in your DMs first. <br>
               Drop your email address to get all TEDxOAU updates so you don’t miss a thing. <br>
               We promise not to spam you!
 
@@ -173,5 +210,8 @@
       <p class="footer__tedx">This independent TEDx event is operated under license from TED.</p>
     </footer>
     </main>
+    
+    <!--========== PREVIEW JS ==========-->
+    <script src="vendor/js/script.js"></script>
   </body>
 </html>
