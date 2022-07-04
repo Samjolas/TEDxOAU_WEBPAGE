@@ -2,9 +2,16 @@
 @use "../abstracts" as a;
 
 .nav__mini {
-  font-size: 2rem;
-  text-align: right;
-  padding: 2rem 2rem 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  & a {
+    font-size: 2rem;
+  }
+  & a:hover {
+    color:a.$tedx-red
+  }
 }
 .heading-main {
   font-size: a.$des-font;
@@ -38,7 +45,7 @@
   }
 
   .text__big {
-    // font-size: a.$big-font;
+    font-size: a.$big-font;
     font-size: 7rem;
     font-weight: a.$fw-7;
     color: rgba(255, 255, 255, 0.3); //to be editted
@@ -174,8 +181,8 @@
   }
 }
 
-.team-footer{
-  margin-top: 15rem ;
+.team-footer {
+  margin-top: 15rem;
 }
 
 // /*======== HEADER ========*/
@@ -207,16 +214,13 @@
 
 /* For large devices */
 @media screen and (min-width: 968px) {
-
-  
-.nav__mini {
-  font-size: 3rem;
-  text-align: right;
-  padding: 2rem 2rem 2rem 0rem;
-}
-.heading-main {
-  font-size: a.$main-font;
-}
+  .nav__mini {
+    font-size: 3rem;
+    padding: 2rem
+  }
+  .heading-main {
+    font-size: a.$main-font;
+  }
   .team__group {
     gap: 1.5rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
