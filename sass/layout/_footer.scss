@@ -3,6 +3,11 @@
 
 .footer {
     margin: 2rem 0;
+
+    &__tedx {
+        text-align: center;
+        font-size: 1.5rem;
+    }
     &__container{
         display: block;
         &--upper{

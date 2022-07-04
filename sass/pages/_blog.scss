@@ -29,6 +29,8 @@
     align-items: center;
     gap: 4rem;
   }
+
+  
   &__description {
     gap: 1rem;
     .blog__summary {
@@ -36,6 +38,13 @@
       line-height: 1.5;
     }
   }
+
+  &__title {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    text-decoration: solid;
+  }
+
   &__text {
     font-weight: a.$fw-3;
     font-size: a.$default-font;

@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       // text exists! start typewriter animation
       typeWriter(dataText[i], 0, function () {
         // after callback (and whole text has been animated), start next text
-        StartTextAnimation(i + 1);
+        StartTextAnimation(i);
       });
     }
   }
@@ -121,8 +121,9 @@ console.log(Blog);
 
 Next.addEventListener("click", function () {
   removeBlog();
-  currentActive = Math.floor(Math.random() * 4);
-  num = Blog[currentActive];
+  let currentActive = Math.floor(Math.random() * 4);
+  console.log(currentActive)
+  let num = Blog[currentActive];
   num.classList.remove("de-active");
 });
 
