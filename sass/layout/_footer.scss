@@ -30,6 +30,7 @@
                     padding-bottom: 1rem;
                 } .upper_right-item p{
                     font-size: 1.4rem;
+                    line-height: 1.5;
                 }
             }
         }
@@ -50,8 +51,9 @@
             }
 
             &_mail p{
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 text-align: center;
+                line-height: 1.5;
             }
 
             &_input{
@@ -167,8 +169,9 @@
            text-align: left;
         }
         & p{
-            font-size: 2rem;
+            font-size: 1.4rem;
             text-align: left;
+            font-weight:100;
         }
     }
    .footer__container--lower_input{

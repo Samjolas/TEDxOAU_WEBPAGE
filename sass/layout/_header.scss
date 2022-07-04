@@ -62,9 +62,11 @@
   cursor: pointer;
   font-size: 1.8rem;
 }
-.nav__link,
 .nav__toggle {
-  color: a.$text-color;
+  font-size: 2.5rem;
+}
+.nav__link {
+  font-size: 1.5rem;
 }
 
 /* show Menu toggle from classList in JS */

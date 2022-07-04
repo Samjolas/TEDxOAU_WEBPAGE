@@ -47,6 +47,7 @@
       }
       &--sub {
         font-size: 1.4rem;
+        line-height: 1.5;
         font-weight: 100;
       }
       &--font {
@@ -55,7 +56,7 @@
         right: 10%;
         color: a.$tedx-red;
         font-weight: 700;
-        font-size: 3rem;
+        font-size: 1.5rem;
       }
     }
   }
@@ -88,6 +89,44 @@
     }
   }
 }
+
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 2.5rem;
+  margin-bottom: 2.5rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 10px;
+  background: a.$tedx-red;
+  color: #fff;
+  z-index: 10;
+  transition: .5s;
+  visibility: hidden;
+}
+
+.scrolltop:hover {
+  background-color: a.$text-color;
+  transform: translate3d(3% 3% 3%);
+}
+
+.scrolltop--icon {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+.scrolltop--icon:hover {
+  color:a.$tedx-red;
+}
+
+/* Show scroll top */
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
+}
+
 
 @media screen and (min-width: 576px) {
 }
@@ -125,17 +164,17 @@
     &--intro {
       .intro-title {
         color: a.$text-color;
-        font-size: 10rem;
+        font-size: 16rem;
       }
       .intro-subtitle {
         color: a.$tedx-red;
-        font-size: 10rem;
+        font-size: 16rem;
       }
     }
     &--brief {
       width: 50%;
       & h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 100;
       }
     }
@@ -153,7 +192,7 @@
         left: 0;
       }
       &--sub {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         font-weight: 100;
       }
       &--font {
