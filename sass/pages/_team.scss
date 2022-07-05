@@ -23,10 +23,10 @@
       @include a.flex-column;
       align-items: center;
       justify-content: center;
-      gap: 2rem;
+      gap: 5rem;
       .team__head-img {
-        width: 100%;
-        height: 426px;
+        width: 80%;
+        height: 100%;
         object-fit: cover;
       }
     }
@@ -69,7 +69,6 @@
     background-color: a.$bg-color;
     overflow: hidden;
     cursor: pointer;
-
     &:hover .team__img {
       filter: grayscale(0%);
     }
@@ -234,7 +233,7 @@
         @include a.flex-row;
         align-items: center;
         justify-content: space-between;
-        gap: 10rem;
+        gap: 5rem;
         .team__head-img {
           width: 100%;
           height: auto;

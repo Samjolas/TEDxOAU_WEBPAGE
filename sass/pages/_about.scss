@@ -7,16 +7,19 @@
   
 // }
 .about{
-  &__header {
 
-    // margin: 0 13rem;
-      background-image:url(../resource/about.jpg);
-    height: 80vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  &__img {
+    height: 100vh;
+    margin: auto;
+    display: flex;
   }
-    &__header-title {
+  &__header {
+    
+    
+  }
+  &__header-title {
+    height: 50vh;
+    margin-top: -30%;
     text-align: center;
     font-weight: 700;
     font-size: 8rem;
@@ -45,16 +48,9 @@
   }
 }
 
-@media screen and (min-width: 968px) {
-    .about__header {
-  
-      margin: 0 13rem;
-      background-image:url(../resource/about.jpg);
-      height: 80vh;
-      background-repeat: no-repeat;
-      // background-position: center;
-      // background-size: cover;
-    }
-  
+@media screen and (max-width: 968px) {
+  .about__header-title {
+    margin-top: -80%;
+  }
 
 }
