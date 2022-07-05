@@ -32,6 +32,8 @@
     }
     &--column {
       @include a.flex-column;
+      align-items: center;
+      justify-content: center;
     }
   }
   &__text {
@@ -45,7 +47,6 @@
   }
 
   .text__big {
-    font-size: a.$big-font;
     font-size: 7rem;
     font-weight: a.$fw-7;
     color: rgba(255, 255, 255, 0.3); //to be editted
@@ -255,8 +256,7 @@
     }
 
     .text__big {
-      // font-size: a.$big-font;
-      font-size: 30rem;
+      font-size: 25rem;
       font-weight: a.$fw-7;
       color: rgba(255, 255, 255, 0.3); //to be editted
     }
