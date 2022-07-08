@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 // POPUP EFFECT //
-
+const body = document.querySelector(".body");
 let teamPreview = document.querySelector(".preview");
 let teamPreviewBox = document.querySelectorAll(".preview__body");
 
@@ -103,13 +103,26 @@ document.querySelectorAll(".team__group .team__item").forEach((team__item) => {
         team__preview.classList.remove("active");
       }
     });
+    if (!teamPreview.classList.contains("preview__body.active")) {
+      // Disable scroll
+      body.style.overflow = "hidden";
+    } else {
+      // Enable scroll
+      body.style.overflow = "auto";
+    }
   });
 });
 
+teamPreview.addEventListener("click", () => {
+  // closeModal.classList.remove("active");
+  teamPreview.style.display = "none";
+  body.style.overflow = "auto";
+});
 teamPreviewBox.forEach((closeModal) => {
   closeModal.querySelector(".btn-close").onclick = () => {
     closeModal.classList.remove("active");
     teamPreview.style.display = "none";
+        body.style.overflow = "auto";
   };
 });
 
@@ -122,7 +135,7 @@ console.log(Blog);
 Next.addEventListener("click", function () {
   removeBlog();
   let currentActive = Math.floor(Math.random() * 4);
-  console.log(currentActive)
+  console.log(currentActive);
   let num = Blog[currentActive];
   num.classList.remove("de-active");
 });
