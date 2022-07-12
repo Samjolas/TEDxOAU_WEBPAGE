@@ -86,6 +86,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
   StartTextAnimation(0);
 });
 
+// MOVE TO NEXT //
+
+let Next = document.querySelector("#next");
+let Blog = document.querySelectorAll(".blog__wrapper");
+console.log(Blog);
+
+Next.addEventListener("click", function () {
+  removeBlog();
+  let currentActive = Math.floor(Math.random() * 4);
+  console.log(currentActive);
+  let num = Blog[currentActive];
+  num.classList.remove("de-active");
+});
+
+function removeBlog() {
+  Blog.forEach((x) => {
+    x.classList.add("de-active");
+  });
+}
+
 // POPUP EFFECT //
 const body = document.querySelector(".body");
 let teamPreview = document.querySelector(".preview");
@@ -112,7 +132,6 @@ document.querySelectorAll(".team__group .team__item").forEach((team__item) => {
     }
   });
 });
-
 teamPreview.addEventListener("click", () => {
   // closeModal.classList.remove("active");
   teamPreview.style.display = "none";
@@ -126,22 +145,4 @@ teamPreviewBox.forEach((closeModal) => {
   };
 });
 
-// MOVE TO NEXT //
 
-let Next = document.querySelector("#next");
-let Blog = document.querySelectorAll(".blog__wrapper");
-console.log(Blog);
-
-Next.addEventListener("click", function () {
-  removeBlog();
-  let currentActive = Math.floor(Math.random() * 4);
-  console.log(currentActive);
-  let num = Blog[currentActive];
-  num.classList.remove("de-active");
-});
-
-function removeBlog() {
-  Blog.forEach((x) => {
-    x.classList.add("de-active");
-  });
-}
