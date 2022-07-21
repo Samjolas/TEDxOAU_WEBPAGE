@@ -36,7 +36,7 @@
     h2 {
       font-size: 1.4rem;
       font-weight: 100;
-      line-height: 1.8;
+      line-height: 1.5;
     }
   }
   .hero {
@@ -47,7 +47,7 @@
       }
       &--sub {
         font-size: 1.4rem;
-        line-height: 1.8;
+        line-height: 1.5;
         font-weight: 100;
       }
       &--font {
@@ -99,12 +99,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 10px;
   background: a.$tedx-red;
   color: #fff;
   z-index: 10;
-  transition: .5s;
+  transition: 0.5s;
   visibility: hidden;
 }
 
@@ -115,10 +115,10 @@
 
 .scrolltop--icon {
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .scrolltop--icon:hover {
-  color:a.$tedx-red;
+  color: a.$tedx-red;
 }
 
 /* Show scroll top */
@@ -126,7 +126,6 @@
   visibility: visible;
   bottom: 1.5rem;
 }
-
 
 @media screen and (min-width: 576px) {
 }
@@ -158,7 +157,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     // column-gap: 10rem;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 70% 25%;
     height: 100vh;
     // margin-top: ;
     &--intro {
@@ -172,9 +171,9 @@
       }
     }
     &--brief {
-      width: 50%;
+      width: 60%;
       & h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         font-weight: 100;
       }
     }
@@ -192,7 +191,7 @@
         left: 0;
       }
       &--sub {
-        font-size: 1.7rem;
+        font-size: 1.7rem !important;
         font-weight: 100;
       }
       &--font {
