@@ -68,14 +68,17 @@
     }
   }
   &__img {
-    // position: relative;
+    //position: relative;
     width: 100%;
     height: 300px;
   }
+
+  &__wrapper {
+    position: relative;
+  }
   &__next {
     position: absolute;
-    bottom: 4.3rem;
-    right: 2rem;
+    top: 37%;
     background-color: a.$tedx-red;
     cursor: pointer;
     height: 5rem;
@@ -85,6 +88,11 @@
     @include a.main-center;
     align-items: center;
     -webkit-text-stroke: 1px a.$text-color;
+    display: none;
+
+    &:hover {
+      background: red;
+    }
   }
 }
 
@@ -127,6 +135,7 @@
     align-self: flex-start;
   }
   .blog__next {
+    display: flex;
     position: absolute;
     bottom: 42px;
     right: 20px;

@@ -75,3 +75,4 @@ teamPreviewBox.forEach((closeModal) => {
 });
 
 
+

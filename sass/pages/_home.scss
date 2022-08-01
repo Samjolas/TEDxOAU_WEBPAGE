@@ -7,6 +7,8 @@
   display: flex;
   flex-direction: column;
   gap: 6rem;
+  
+  
 }
 .good-look {
   display: flex;
@@ -56,7 +58,11 @@
         right: 10%;
         color: a.$tedx-red;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 3rem;
+      }
+      &--em {
+        font-weight: 300;
+        font-size: 2.9rem;
       }
     }
   }
@@ -151,6 +157,9 @@
   // }
   .good-look {
     margin-top: 10rem;
+  }
+  .bad-look {
+    margin: -5rem 0 0 -5rem;
   }
 
   .home__container {

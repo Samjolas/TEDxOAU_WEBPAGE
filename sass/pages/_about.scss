@@ -7,6 +7,7 @@
   
 // }
 .about{
+  margin-bottom: 2rem;
 
   &__img {
     height: 100vh;
@@ -37,7 +38,14 @@
         font-size: 4rem;
         font-weight: 500;
         margin-bottom: 2rem;
+        transition: all 1s;
         // text-align: center;
+
+        &:hover {
+          color: a.$tedx-red;
+          cursor: pointer;
+          transform: translateX(1rem);
+        }
       }
       &_summary {
         font-size: 1.6rem;
